@@ -1,0 +1,140 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-15 10:43:36
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-13 11:49:16
+*/
+.middle .position { margin:20px 0 0 34px;}
+.middle .title h3 { text-align: center; line-height: 110px; background:url(../images/about_title.png)no-repeat 50% 40%; font-size:18px; font-weight: normal;}
+.details .top { overflow:hidden;}
+.sidebar { text-align: center; padding:0;}
+.sidebar_title {  font-size:18px; padding:12px 0; background:#f00; color:#fff;}
+.sidebar_title h3{ font-weight:normal;}
+.sidebar ul { background:#efefef;}
+.sidebar ul li{
+    border-bottom: 2px dashed #999; font-size:18px; line-height:58px; }
+.sidebar ul li:nth-child(5){
+    border:0;}
+.sidebar ul li span {margin-left: 12px;}
+.sidebar ul li a { display: block;}
+.sidebar ul .active a{ color:#f00;}
+.sidebar ul li:hover a{ color:#f00;}
+.left { padding:0 15px;}
+.md_pic { margin-bottom:20px;}
+.md_pic img {  width:100%; height:100%;}
+.sm_pic { padding:0 3px; cursor: pointer;}
+.sm_pic img{ border:2px solid #fff; width:100%; height:100%;}
+.active img{ border:2px solid #f00;}
+.details .right { padding:0;}
+.details .right h3{ font-size:18px; font-weight:normal; line-height:32px;}
+.details .right p { font-size:12px; line-height:32px;}
+.details .right .price {background:#ffe3e3; padding:12px 10px 15px 18px;overflow:hidden;}
+.details .right .price p span { font-size:20px;}
+.details .right .price p i { font-style: normal; background:#ff6666; padding:4px 9px; color:#fff; margin-left:20px;}
+.details .right .price .right { padding:0; text-align: center;}
+.details .right .price .right .text { padding:0;}
+.details .right .price .right div:nth-child(1) { border-right: 1px solid #ff8e8e;}
+.details .right select { border:0; margin-right:15px;}
+.details .right p img { margin:0 5px 0 20px; width:20px; height:20px;}
+.details .right label { margin-right:17px; font-weight:normal;}
+.details .right .size { margin-bottom:30px; overflow:hidden;}
+.details .right .size p { background:url(../images/pro_details_07.jpg) no-repeat 0 center; background-size: 88% 2px; margin-bottom:20px; line-height:12px;}
+.details .right .size button { padding:3px 6px; border:1px solid #362e2b; background:transparent;}
+.imgBtn{  border:2px solid #fff; background:transparent; padding:0;}
+.btn { border-radius:0;}
+.btnActive { border-color:#f00!important;}
+.btnActive:focus { border-color:#f00;}
+.btn-default:hover {background-color: #fff;}
+.pic { margin-bottom:30px;}
+.num input{width:41px; text-align: center;}
+.num button { padding:1px 5px; background:#ffe3e3; border:1px solid #b5b5b5;}
+.num button#minus { padding:1px 7px;}
+.details .right .buy { overflow:hidden;}
+.details .right a.one { width:35%; text-align:center; background:#dadada; color:#000; margin-right:20px;}
+.details .right a.two { width: 40%; text-align:center; background:#f00; color:#fff;}
+.details .right a.two img { margin-right:4px;}
+.center { padding:0 15px;}
+.center button { text-align:left; border:0; padding:0; margin:32px 0; background:#fff;}
+.bottom { border:1px solid #a0a0a0 ; padding:10px; margin:0 15px 43px;  line-height:35px;}
+.bottom h3 { font-weight:normal; line-height:35px;}
+.bottom ul li { float: left; width: 20%;}
+
+@media screen and (max-width: 1200px){ .details .right .price p i { display: inline-block; line-height: 16px; margin-left:42px;}}
+
+@media screen and (max-width: 1024px){
+  .text p a { padding:5px 10px;}
+  .details .right .price p span { margin-right:5%;}
+  .details .right .size p {  background-size: 84% 2px; }
+  .bottom { line-height:25px; padding:8px;}
+.bottom h3 { font-weight:normal; line-height:25px;}
+.details .right select { border:0; margin-right:0px;}
+
+  }
+  @media screen and (max-width:856px){
+    .bottom ul  li{ width: 25%;}
+   }
+
+  @media screen and (max-width: 967px){
+    .details .right .price p i { display: inline-block; line-height: 16px; margin-left:42px;}
+  }
+
+
+
+
+@media screen and (max-width: 767px){
+  .middle { margin-top:16px;}
+  .details .right { overflow:hidden;}
+  .details .right h3 { font-size: 24px; line-height: 42px;}
+  .details .right p { font-size: 18px; line-height: 32px;}
+  .details .right .price { margin-bottom: 5px ;}
+  .details .right .price p span { font-size: 18px ; margin-right: 12px;}
+  .details .right .price p i { margin-left: 0; }
+  .details .right p { line-height: 40px; }
+  .details .right .size p {  background-size: 82% 2px; }
+  .bottom { overflow:hidden; padding:15px 0 15px 5px; font-size:18px;}
+  .bottom {line-height:42px;}
+  .details .right .size .center { padding:0 0 0 15px;}
+ .details .right .size .center button { text-align:left; border:0; padding:0 5px 0 0; line-height:28px; boder;0;}
+ .buy { margin-bottom:33px;}
+ .buy a { font-size: 24px;}
+ .details .right a.one { width:40%; margin-right:8%;}
+.details .right a.two { width: 52%;}
+.center button { padding:0; margin:0; font-size:18px;}
+.details .right .size button { font-size:18px; padding:0 5px;}
+.details .right label { font-size:18px; float: left;}
+.bottom { margin:0 0 43px;}
+.bottom ul  li{ width: 33.3333333%;}
+.details .right select { border:0; margin-right:0px;}
+}
+
+@media screen and (max-width: 640px){
+  .bottom ul li{ font-size:15px;}
+  .details .right h3 { font-size: 21px; line-height: 30px;}
+  .details .right p { font-size: 16px; line-height: 24px;}
+  .buy a { font-size: 21px;}
+  .details .right label { font-size:16px;}
+  .details .right .size button { font-size:16px;}
+}
+
+@media screen and (max-width: 540px){
+  .bottom ul li{ width:50%;}
+  .details .right h3 { font-size: 18px; line-height: 25px;}
+  .details .right p { font-size: 14px; line-height: 22px;}
+  .buy a { font-size: 18px;}
+  .details .right label { font-size:14px;}
+  .details .right .size button { font-size:14px;}
+  .details .right .size .center button { line-height:22px;}
+}
+
+@media screen and (max-width: 372px){
+  .bottom ul li { font-size:12px;}
+  .details .right h3 { font-size: 15px; line-height: 26px;}
+  .details .right p { font-size: 12px;}
+  .buy a { font-size: 15px;}
+  .details .right label { font-size:12px;}
+  .details .right .size button { font-size:12px;}
+  .price .left { width:60%;}
+  .price .right { width:40%;}
+  .details .right .price p span { margin-right:0;}
+
+}

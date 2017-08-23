@@ -1,0 +1,73 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-14 11:13:29
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-13 10:21:06
+*/
+.middle { background:url(../images/reg_background.jpg) center 0; padding:130px 0 107px 0 ;}
+.middle .login { width: 57%; background:#fff; margin:0 auto; padding: 22px 105px 38px;}
+.middle .login h3 { text-align: center; font-size:24px; margin-bottom:30px;}
+
+.middle input { width:100%;}
+.middle .login span { width:73px; height: 55px; background:#ddd; border-radius:0; border:1px solid #959595; border-right:0;}
+.middle .login .name input { height:55px; line-height:55px; border-radius:0; border:1px solid #959595; border-left:0;}
+.middle .login .password input { height:55px; line-height:55px; border-radius:0; border:1px solid #959595; border-left:0;}
+.middle .input-group { margin-bottom: 21px;}
+
+.middle .login .num span{ background:#fff; border:1px solid #959595; border-left:0;}
+.middle .login .num input { height:55px; line-height:55px; border-radius:0; border:1px solid #959595;  border-right:0;}
+.middle .login .num span button { border:0; margin:0 17px; border-radius:15px; background:#f00; color:#fff;}
+.middle .login .num .btn { padding:6px 20px;}
+.middle .input-group-btn:last-child > .btn { margin-left:0; border-top-left-radius: 15px; border-bottom-left-radius: 15px;}
+
+button#login { width:100%; height:62px; background:#f00; border-radius:8px; color:#fff; font-size:24px; margin-bottom:30px;}
+
+.other h4{ background:url(../images/login_01.jpg) no-repeat center; text-align: center; font-size: 14px; font-weight: normal;}
+
+.icon { width:177px; margin:0 auto;}
+.icon img{ margin:15px 11px 0;}
+
+@media screen and (max-width: 1024px){
+  .middle { padding-top: 20px; padding-bottom: 28px; }
+  .middle .login { width: 68%;  padding: 22px 60px;}
+  .middle .input-group {
+    margin-bottom: 18px;}
+  .middle .login h3 {
+    margin-bottom: 15px;
+  }
+}
+
+
+  @media screen and (max-width: 767px){
+  .middle { padding:76px 0 203px; }
+  .middle .login { width: 100%;  padding: 20px 45px 18px;}
+
+}
+  @media screen and (max-width: 650px){
+  .middle .login h3 { font-size:22px;}
+  button#login { font-size:22px; height: 55px;}
+
+  }
+
+  @media screen and (max-width: 550px){
+    .middle .login h3 { font-size:20px;}
+    .form-control { font-size:12px;}
+    .middle .login .name input { height: 50px; line-height:50px;}
+    .middle .login .password input { height: 50px; line-height:50px;}
+    .middle .login .num input { height: 50px; line-height:50px; }
+    .middle .login span { height: 50px; width:65px;}
+    .middle .login span img { width:70%; }
+    button#login{ font-size:20px; height: 50px;}
+    .middle .login .num .btn {padding: 6px 10px;}
+  }
+
+  @media screen and (max-width: 450px){
+  .middle .login h3 { font-size:18px;}
+  .middle .login .name input { height: 45px; line-height:45px;}
+    .middle .login .password input { height: 45px; line-height:45px;}
+    .middle .login .num input { height: 45px; line-height:45px; }
+    .middle .login span { height: 45px; width:60px;}
+    .middle .login span img { width:70%; }
+    .btn { font-size:12px;}
+    button#login { font-size:18px; height: 45px;}
+  }

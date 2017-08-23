@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>会员中心首页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/user.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="visible-xs title">
+            <h3>会员中心</h3>
+            <button onclick="returnBack()"><img src="images/about_1_xs.png"></button>
+        </div>
+        <div class="container hidden-xs">
+            <div class="top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <a href="index.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-5">
+                        <form class="input-group search">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">    <img src="images/search.png" ></button>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="col-md-6 col-sm-6 login">
+                            <a href="login.html" id="login">登录</a>
+                            <a href="reg.html" id="reg">注册</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 shop_cart">
+                            <a href="shop_cart.html">我的购物车
+                            <img src="images/shop_cart.png">
+                            <span>(0)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default  hidden-xs">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="about.html">品牌介绍</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                            <li><a href="product.html">产品中心</a></li>
+                            <li><a href="contact_us.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="middle">
+        <div class="container">
+            <div class="position hidden-xs">
+                <p>您的当前位置：<a href="index.html">首页</a>><a href="#">会员中心</a></p>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 left hidden-xs">
+                    <div class="top">
+                        <h3>会员中心</h3>
+                        <ul>
+                            <li class="active"><a href="user.html">个人资料</a></li>
+                            <li><a href="address.html">收货地址</a></li>
+                            <li><a href="#">修改密码</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <h3>订单中心</h3>
+                        <ul>
+                            <li><a href="order.html">我的订单</a></li>
+                            <li><a href="#">我的意外保</a></li>
+                            <li><a href="#">我的回购单</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">评价晒单</a></li>
+                            <li><a href="order.html">全部订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10 col-sm-10 right">
+                    <div class="top">
+                        <h3 class="hidden-xs">个人信息</h3>
+                        <table class="table table-bordered  hidden-xs">
+                            <tbody>
+                                <tr>
+                                    <td colspan="6">
+                                        <div class="col-md-3 col-sm-3 col-xs-3 photo">
+                                            <img src="images/photo.jpg">
+                                        </div>
+                                        <ul class="col-md-5 col-sm-5 detail">
+                                            <li>会员名：赵小敏</li>
+                                            <li>账号：254478643555</li>
+                                            <li>上次登录时间：2017-01-01</li>
+                                            <li>联系方式：18775338655</li>
+                                        </ul>
+                                        <ul class="col-md-4 col-sm-4 detail">
+                                            <li>修改个人资料 <a href="#"><img src="images/reg_01.png"></li></a>
+                                            <li>用户安全的等级</li>
+                                            <img src="images/password.png" class="safe">
+                                            <li> <img src="images/iphone.png">绑定手机：已绑定</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="order.html">全部订单（<span>4</span>）</a></td>
+                                    <td><a href="#">已完成（<span>4</span>）</a></td>
+                                    <td><a href="#">待付款</a></td>
+                                    <td><a href="#">待收货</a></td>
+                                    <td><a href="#">待评价</a></td>
+                                    <td><a href="#">退款/货</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="visible-xs row">
+                            <div class="col-xs-12 photo">
+                                <img src="images/member_home_01_xs.jpg">
+                            </div>
+                            <ul class=" col-xs-6 detail">
+                                <li>会员名：赵小敏</li>
+                                <li>账号：254478643555</li>
+                                <li>上次登录时间：2017-01-01</li>
+                                <li>联系方式：18775338655</li>
+                            </ul>
+                            <ul class=" col-xs-6 detail">
+                                <li>修改个人资料 <a href="#"><img src="images/reg_01.png"></li></a>
+                                <li>用户安全的等级</li>
+                                <img src="images/password.png" class="safe">
+                                <li> <img src="images/iphone.png">绑定手机：已绑定</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="visible-xs center row">
+                        <li class="col-xs-3 icon">
+                            <a href="user.html"><img src="images/member_home_icon01.png"></a>
+                            <p><a href="user.html">个人资料</a></p>
+                        </li>
+                        <li class="col-xs-6 icon">
+                            <a href="address.html"><img src="images/member_home_icon02.png"></a>
+                            <p><a href="address.html">收货地址</a></p>
+                        </li>
+                        <li class="col-xs-3 icon">
+                            <a href="#"><img src="images/member_home_icon03.png"></a>
+                            <p><a href="#">修改密码</a></p>
+                        </li>
+                        <li class="col-xs-3 icon">
+                            <a href="#"><img src="images/member_home_icon04.png"></a>
+                            <p><a href="#">已完成</a></p>
+                        </li>
+                        <li class="col-xs-6 icon">
+                            <a href="#"><img src="images/member_home_icon05.png"></a>
+                            <p><a href="#">待付款</a></p>
+                        </li>
+                        <li class="col-xs-3 icon">
+                            <a href="#"><img src="images/member_home_icon06.png"></a>
+                            <p><a href="#">待收货</a></p>
+                        </li>
+                        <li class="col-xs-3 icon">
+                            <a href="#"><img src="images/member_home_icon07.png"></a>
+                            <p><a href="#">待评价</a></p>
+                        </li>
+                    </ul>
+                    <div class="bottom">
+                        <h3>最近浏览</h3>
+                        <div class="row">
+                            <ul class="list col-md-12 col-sm-12 col-xs-12">
+                                <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                    <a href="pro_details.html"><img src="images/member_home_01.jpg"></a>
+                                    <div class="text">
+                                    <h4><a href="pro_details.html">trucco代购2017夏季新款女装夏装两件套韩版小香风夏天套装时尚潮</a></h4>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                    <a href="pro_details.html"><img src="images/member_home_02.jpg"></a>
+                                    <div class="text">
+                                    <h4><a href="pro_details.html">trucco代购2017夏季新款女装夏装两件套韩版小香风夏天套装时尚潮</a></h4>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                    </div>
+                                </li>
+                                <li class="col-md-4 col-sm-4 hidden-xs pro">
+                                    <a href="pro_details.html"><img src="images/member_home_03.jpg"></a>
+                                    <div class="text">
+                                    <h4><a href="pro_details.html">trucco代购2017夏季新款女装夏装两件套韩版小香风夏天套装时尚潮</a></h4>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>版权所有 trucco有限责任公司 中国丽人网　提供技术支持 ◎ 服装品牌大全 ◎知名品牌招商</p>
+        <p>《中华人民共和国增值电信业务经营许可证》浙B2-20110190</p>
+    </div>
+</body>
+</html>

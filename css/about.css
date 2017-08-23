@@ -1,0 +1,36 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-12 15:59:41
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-12 15:01:43
+*/
+.middle .position { margin:20px 0 0 34px;}
+
+.middle .title h3 { text-align: center; line-height: 110px; background:url(../images/about_title.png)no-repeat 50% 40%; font-size:18px; font-weight: normal;}
+.content .left { padding:0;}
+.content .left img { width: 100%; display: block; margin-bottom:48px; padding-right:10px;}
+.content .right {padding:0 0 0 18px;}
+.content .right p { font-size:12px; text-indent: 2em; line-height:20px; margin-bottom: 20px;}
+
+@media screen and (max-width: 1024px){
+  .content .right p { margin-bottom:15px;}
+  }
+
+@media screen and (max-width: 767px){
+  	.middle { margin-top: 31px; }
+    .content .right { padding:0;}
+    .content .left img { padding-right:10px; margin-bottom:0;}
+    .content .right p { font-size:18px; line-height:30px;}
+}
+
+@media screen and (max-width: 650px){
+     .content .right p { font-size:16px; line-height:28px;}
+}
+
+@media screen and (max-width: 550px){
+    .content .right p { font-size:14px; line-height:26px;}
+}
+
+@media screen and (max-width: 450px){
+    .content .right p { font-size:12px; line-height:24px;}
+}

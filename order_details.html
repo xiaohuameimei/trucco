@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>订单详情页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/order_details.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script type="text/javascript" href="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" href="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="visible-xs title">
+            <h3>订单详情</h3>
+            <button onclick="returnBack()"><img src="images/about_1_xs.png"></button>
+        </div>
+        <div class="container hidden-xs">
+            <div class="top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <a href="index.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-5">
+                        <form class="input-group search">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">    <img src="images/search.png" ></button>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="col-md-6 col-sm-6 login">
+                            <a href="login.html" id="login">登录</a>
+                            <a href="reg.html" id="reg">注册</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 shop_cart">
+                            <a href="shop_cart.html">我的购物车
+                            <img src="images/shop_cart.png">
+                            <span>(0)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default hidden-xs">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="about.html">品牌介绍</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                            <li><a href="product.html">产品中心</a></li>
+                            <li><a href="contact_us.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="middle">
+        <div class="container">
+            <div class="position hidden-xs">
+                <p>您的当前位置：<a href="index.html">首页</a>><a href="#">我的订单</a>><a href="#">订单详情</a></p>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 left hidden-xs">
+                    <div class="top">
+                        <h3>会员中心</h3>
+                        <ul>
+                            <li><a href="user.html">个人资料</a></li>
+                            <li><a href="address.html">收货地址</a></li>
+                            <li><a href="#">修改密码</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <h3>订单中心</h3>
+                        <ul>
+                            <li class="active"><a href="order.html">我的订单</a></li>
+                            <li><a href="#">我的意外保</a></li>
+                            <li><a href="#">我的回购单</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">评价晒单</a></li>
+                            <li><a href="order.html">全部订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10 col-sm-10 right">
+                    <h3>订单详情</h3>
+                    <ul class="top">
+                        <li class="col-md-3 col-sm-3 col-xs-12">
+                            当前订单交易状态：交易成功
+                        </li>
+                        <li class="col-md-12 col-sm-12 hidden-xs">
+                        </li>
+                        <li class="col-md-3 col-sm-3 col-xs-12">
+                            收货地址：赵小敏   18775338655
+                        </li>
+                        <li class="col-md-6 col-sm-6 col-xs-12">
+                            广西南宁市青秀区伶俐街伶俐路38-2号伶俐小区10楼1012室
+                        </li>
+                        <li class="col-md-12 col-sm-12 hidden-xs">
+                        </li>
+                        <li class="col-md-3 col-sm-3 col-xs-5">
+                            订单编号：12345678910
+                        </li>
+                        <li class="col-md-6 col-sm-6 col-xs-7">
+                            支付宝交易号：2134567891256345621
+                        </li>
+                        <li class="col-md-3 col-sm-3 col-xs-12">
+                            创建时间：2017-01-01   12:00:50
+                        </li>
+                        <li class="col-md-3 col-sm-3 col-xs-12">
+                            发货时间：2017-01-01   12:00:50
+                        </li>
+                        <li class="col-md-6 col-sm-6 col-xs-12">
+                            支付宝交易号：2134567891256345621
+                        </li>
+                        <li class="col-md-3 col-sm-3 col-xs-12">
+                            交易时间：2017-01-01   12:00:50
+                        </li>
+                    </ul>
+                    <div class="center">
+                        <table class="head">
+                            <thead>
+                                <tr>
+                                    <td class="col-md-4 col-sm-4 col-xs-4">商品信息</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">单价（元）</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">数量</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">金额（元）</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">操作</td>
+                                </tr>
+                            </thead>
+                        </table>
+                        <table  class="table table-condensed body hidden-xs">
+                            <thead>
+                                <tr>
+                                    <td>订单编号：FSHSJ12345678910</td>
+                                    <td colspan="2">交易时间：2017-01-01   12:00:50</td>
+                                    <td colspan="2">交易状况：交易成功（已签收）</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-md-4 col-sm-4"><a href="pro_details.html" class="col-md-6 col-sm-6"><img src="images/order_details_01.jpg"></a>
+                                    <div class="text col-md-6 col-sm-6">
+                                        <a href="pro_details.html">2017trucco夏季新款休闲时尚套装女装宽松显瘦无袖上衣短裤两件套潮</a><span>颜色分类：黑底脸谱色</span>
+                                    </div></td>
+                                    <td class="col-md-2 col-sm-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2">1</td>
+                                    <td class="col-md-2 col-sm-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2"><a href="#"><span>评价</span></a><a href="#">再次购买</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table  class="table table-condensed body hidden-xs">
+                            <thead>
+                                <tr>
+                                    <td>订单编号：FSHSJ12345678910</td>
+                                    <td colspan="2">交易时间：2017-01-01   12:00:50</td>
+                                    <td colspan="2">交易状况：交易成功（已签收）</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-md-4 col-sm-4"><a href="pro_details.html" class="col-md-6 col-sm-6"><img src="images/order_details_01.jpg"></a>
+                                    <div class="text col-md-6 col-sm-6">
+                                        <a href="pro_details.html">2017trucco夏季新款休闲时尚套装女装宽松显瘦无袖上衣短裤两件套潮</a><span>颜色分类：黑底脸谱色</span>
+                                    </div></td>
+                                    <td class="col-md-2 col-sm-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2">1</td>
+                                    <td class="col-md-2 col-sm-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2"><a href="#"><span>评价</span></a><a href="#">再次购买</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table  class="table table-condensed body hidden-xs">
+                            <thead>
+                                <tr>
+                                    <td>订单编号：FSHSJ12345678910</td>
+                                    <td colspan="2">交易时间：2017-01-01   12:00:50</td>
+                                    <td colspan="2">交易状况：交易成功（已签收）</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-md-4 col-sm-4"><a href="pro_details.html" class="col-md-6 col-sm-6"><img src="images/order_details_01.jpg"></a>
+                                    <div class="text col-md-6 col-sm-6">
+                                        <a href="pro_details.html">2017trucco夏季新款休闲时尚套装女装宽松显瘦无袖上衣短裤两件套潮</a><span>颜色分类：黑底脸谱色</span>
+                                    </div></td>
+                                    <td class="col-md-2 col-sm-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2">1</td>
+                                    <td class="col-md-2 col-sm-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2"><a href="#"><span>评价</span></a><a href="#">再次购买</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table  class="table table-condensed body hidden-xs">
+                            <thead>
+                                <tr>
+                                    <td>订单编号：FSHSJ12345678910</td>
+                                    <td colspan="2">交易时间：2017-01-01   12:00:50</td>
+                                    <td colspan="2">交易状况：交易成功（已签收）</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-md-4 col-sm-4"><a href="pro_details.html" class="col-md-6 col-sm-6"><img src="images/order_details_01.jpg"></a>
+                                    <div class="text col-md-6 col-sm-6">
+                                        <a href="pro_details.html">2017trucco夏季新款休闲时尚套装女装宽松显瘦无袖上衣短裤两件套潮</a><span>颜色分类：黑底脸谱色</span>
+                                    </div></td>
+                                    <td class="col-md-2 col-sm-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2">1</td>
+                                    <td class="col-md-2 col-sm-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2"><a href="#"><span>评价</span></a><a href="#">再次购买</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table  class="table table-condensed body visible-xs">
+                            <tbody>
+                                <tr>
+                                    <td class="col-md-4 col-sm-4 col-xs-4"><a href="pro_details.html" class="col-md-6 col-sm-6 col-xs-6"><img src="images/order_details_01.jpg"></a>
+                                    <div class="text col-md-6 col-sm-6 col-xs-6">
+                                        <a href="pro_details.html">trucco休闲时尚套装</a>
+                                    </div></td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">1</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2"><a href="#"><span>评价</span></a><a href="#">再次购买</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4 col-sm-4 col-xs-4"><a href="pro_details.html" class="col-md-6 col-sm-6 col-xs-6"><img src="images/order_details_01.jpg"></a>
+                                    <div class="text col-md-6 col-sm-6 col-xs-6">
+                                        <a href="pro_details.html">trucco休闲时尚套装</a>
+                                    </div></td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">1</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2"><a href="#"><span>评价</span></a><a href="#">再次购买</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4 col-sm-4 col-xs-4"><a href="pro_details.html" class="col-md-6 col-sm-6 col-xs-6"><img src="images/order_details_01.jpg"></a>
+                                    <div class="text col-md-6 col-sm-6 col-xs-6">
+                                        <a href="pro_details.html">trucco休闲时尚套装</a>
+                                    </div></td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">1</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2"><a href="#"><span>评价</span></a><a href="#">再次购买</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4 col-sm-4 col-xs-4"><a href="pro_details.html" class="col-md-6 col-sm-6 col-xs-6"><img src="images/order_details_01.jpg"></a>
+                                    <div class="text col-md-6 col-sm-6 col-xs-6">
+                                        <a href="pro_details.html">trucco休闲时尚套装</a>
+                                    </div></td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">1</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2">￥150.00</td>
+                                    <td class="col-md-2 col-sm-2 col-xs-2"><a href="#"><span>评价</span></a><a href="#">再次购买</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="sum">
+                            <p class="text-right sum">交易总金额：<span>￥600.00</span></p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h3>物流信息</h3>
+                        <div class="bottom_text">
+                            <lable class="col-md-1 col-sm-2 col-xs-2">发货方式：</lable><p class="col-md-1 col-sm-1 col-xs-2">快递</p>
+                            <lable class="col-md-1 col-sm-2 col-xs-3">物流公司：</lable><p class="col-md-9 col-sm-7 col-xs-4">圆通快递</p>
+                            <lable class="col-md-1 col-sm-2 col-xs-2">物流跟踪：</lable>
+                            <div class="col-md-11 col-sm-10 col-xs-10 bottom_detail">
+                                <p><span>2017-01-01</span><span>14:50:00</span><span>【德邦公司】的快递员【那马公司】已收到快件</span></p>
+                                <p><span>2017-01-01</span><span>18:50:00</span><span>由【宏图公司】发往【风纪公司】</span></p>
+                                <p><span>2017-01-02</span><span>09:50:00</span><span>【风纪公司】以收入</span></p>
+                                <p><span>2017-01-02</span><span>09:50:00</span><span>【风纪公司】的派件员【马大哈】正在派件电话：15264568971</span></p>
+                                <p class="current"><span>2017-01-02</span><span>17:50:00</span><span>快递员已被签收，签收人：赵小敏</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>版权所有 trucco有限责任公司 中国丽人网　提供技术支持 ◎ 服装品牌大全 ◎知名品牌招商</p>
+        <p>《中华人民共和国增值电信业务经营许可证》浙B2-20110190</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-16 09:21:11
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-13 10:59:05
+*/
+.middle .position { margin:20px 0 0 34px;}
+.top { margin-top: 20px;}
+.top .schedule img { margin:0 auto; display: block;}
+.top .schedule_text { width:684px; text-align:center; margin:10px auto 35px;}
+.top table { text-align: center;}
+.shopCheck img{ margin-left: -50%;}
+table tr td:nth-child(1) { cursor: pointer;}
+.top table .selected { background:url(../images/gou.png) no-repeat 25%;}
+thead { background:#dadada; font-size: 18px;}
+tbody tr td:nth-child(1){ width:100px;}
+tbody tr td:nth-child(2) { width: 34%; text-align:left;}
+tbody tr td:nth-child(2) img {padding-right:15px; width: 100%;}
+table tbody tr td {
+vertical-align: middle;}
+.text {
+    margin-top: 11%; }
+.text span { color:#f00;}
+.num input{ width:35px; height: 17px; border:1px solid #c9c9c9; text-align:center;}
+.num button { background:#dadada; border:0; padding:0 5px;}
+.num {
+    margin-bottom: 0;}
+tbody tr td:nth-child(5) { color:#f00; width: 12%;}
+tbody tr td:nth-child(6) button { background:#fff;border: 0; display: block; margin:0 auto;}
+.bottom { float: right; font-size:18px; margin-bottom: 75px;}
+.bottom p{ display: inline-block; margin-left:22px;}
+.bottom p span {color:#f00;}
+.bottom a { color:#fff; background:#f00; font-size:18px; padding:12px 25px; margin-left:40px; font-size:18px;}
+
+@media screen and (max-width: 921px){
+    .text { margin-top: 3%; }
+  }
+
+
+  @media screen and (max-width: 767px){
+    .top table { border:1px solid #959595; font-size:18px;}
+    thead { background:#fff;}
+    thead tr td:nth-child(1){ text-align:left;}
+    thead tr td:nth-child(2) span{ float: left;}
+    .top table tr td { border-color:#959595;}
+    tbody tr td:nth-child(1){ width:5%; text-align:left;}
+    tbody tr td:nth-child(2) { width:41%; text-align:left;}
+     tbody tr td:nth-child(6) { width:10%;}
+    .bottom p{ display:block; text-align:right;}
+    .bottom a { padding:5% 23%; float: right; margin-top:18px;}
+    .text { margin-top:0; }
+    tbody tr td:nth-child(2) img { padding-right:5%;}
+  }
+
+  @media screen and (max-width: 610px){
+    .table thead { font-size:15px;}
+    .top table { font-size:15px;}
+    .bottom p {font-size:15px;}
+    .bottom a {font-size:15px; padding: 4% 20%;}
+  }
+
+  @media screen and (max-width: 545px){
+    .table thead { font-size:12px;}
+    .top table { font-size:12px;}
+    .bottom p {font-size:12px;}
+    .bottom a {font-size:12px;}
+  }
+
+  @media screen and (max-width: 435px){
+  tbody tr td:nth-child(6) { width:12%;}
+  }
+
+  @media screen and (max-width: 390px){
+    tbody tr td:nth-child(6){ width:15%;}
+    #shopList_xs .pic { width:100%;}
+    #shopList_xs .text { width:100%;}
+  }

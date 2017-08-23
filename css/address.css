@@ -1,0 +1,104 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-19 16:48:08
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-13 10:17:21
+*/
+.position { margin: 16px 0 38px;}
+.left .top { background:#e0e0e0; text-align: center; padding-bottom: 40px;}
+.left .top h3 { background:#000; font-weight: normal; color: #fff;line-height:65px; font-size: 18px; margin-bottom: 15px;}
+.left .top li { line-height:40px; font-size:14px;}
+
+.left .bottom { background:#e0e0e0; text-align: center; padding-bottom:245px; margin-bottom:87px;}
+.left .bottom h3 { background:#000; font-weight: normal; color: #fff;line-height:65px; font-size:18px; margin-bottom: 15px;}
+.left .bottom li { line-height:40px; font-size:14px;}
+.left li:hover { background:url(../images/sidebar_icon.png) no-repeat 20% center;}
+.left li:hover a { color:#f00;}
+.left a { display: block;}
+.left .active { background:url(../images/sidebar_icon.png) no-repeat 20% center;}
+.left .active a { color:#f00;}
+
+.right .top { padding:36px 0 0 28px;}
+.right .top h3 { font-size:18px; margin-bottom:13px; font-weight: normal;}
+.right .top table { border:1px solid #c9c9c9;text-align:center;}
+.right .top table thead { font-size:14px;}
+.right .top table tbody td { border-color: #c9c9c9; height:77px; vertical-align: middle;}
+.right .top table tbody .addressList { display: inline-block;}
+.right .top table tbody td button { background:#fff; border:0; padding:0 4px;}
+.right .top table tbody td p button span { color:#f00;}
+.selected {cursor: pointer;}
+.right .bottom { padding-left:28px;}
+.right .bottom h3 {  font-size:18px; margin-bottom:13px; font-weight:normal;}
+.bottom label { margin-bottom:0; text-align:right;margin-left: -5%; font-size:14px; font-weight:normal;line-height:26px;}
+.bottom input { height:26px; line-height:26px; padding:0 8px;}
+.bottom input#name { width:27%}
+.bottom input#address1 { width:35%;}
+.bottom input#address2 { width:64%;}
+.bottom input#phone { width:35%;}
+.bottom input#postal { width:35%;}
+.bottom button { padding:9px 0; background:#f00; color:#fff; border: 0; font-size:18px; margin-top:5px; margin-left: 2.5%;}
+.bottom label.checkbox { text-align:left; padding:15px 0 0 11%; overflow: hidden;}
+.agree { cursor: pointer;}
+.bottom label.checkbox .check { float: left; width:4%;}
+.bottom label.checkbox .click { background:url(../images/gou.png) no-repeat 1px 7px;}
+.form-horizontal .control-label { padding:0;}
+
+
+
+@media screen and (max-width: 1024px){
+  .bottom label { margin-bottom:0; text-align:right;margin-left: -3%; }
+    .left .bottom {padding-bottom:185px;}
+    .bottom label.checkbox .check { float: left; width:5%;}
+    .left .active { background-position: 10%;}
+  .left li:hover { background-position: 10%;}
+  }
+
+  @media screen and (max-width: 767px){
+    .right .top h3 { font-size:24px;}
+    .right .bottom h3 { font-size:24px;}
+    .bottom label { font-size:18px;}
+    .right .top table { font-size:18px; word-break:break-all; word-wrap:break-all;}
+    .right .top table thead{ font-size:18px;}
+    .right .top table thead td { width:19%;}
+    .right .top table thead td:nth-child(3) {width:22%;}
+    .right .top table thead td:nth-child(5) {width:21%;}
+    .right .top table tbody { text-align:left;}
+    .right .top table tbody td { width:19%;}
+    .right .top table tbody td:nth-child(3) {width:22%;}
+    .right .top table tbody td:nth-child(5) {width:21%;}
+    .right .top table tbody td p button span { color:#000;}
+    .right .top table tbody td p button { color:#f00;}
+    .bottom label.checkbox { padding:16px 0 0 10%;}
+    .bottom label.checkbox .check { float: left; width:12%;}
+    .bottom button { padding:9px 0; background:#f00; color:#fff; border: 0; font-size:18px; margin-top:5px; margin-left:8%;}
+}
+  @media screen and (max-width: 575px){
+    .right .top table { font-size:15px;}
+    .right .top table thead{ font-size:15px;}
+    .right .top h3 { font-size:22px;}
+    .right .bottom h3 { font-size:22px;}
+    .bottom label { font-size:15px;}
+    .bottom button { font-size:15px;}
+  }
+  @media screen and (max-width: 512px){
+    .right .top table { font-size:12px;}
+    .right .top table thead{ font-size:12px;}
+    .right .top h3 { font-size:18px;}
+    .right .bottom h3 { font-size:18px;}
+    .bottom label { font-size:12px;}
+    .bottom label.checkbox .check { width:18%;}
+    .bottom button { font-size:12px;}
+  }
+  @media screen and (max-width: 407px){
+    .right .top table tbody td:nth-child(1) span { display: block;}
+  }
+  @media screen and (max-width: 373px){
+    .right .top table thead td { width:18%;}
+  .right .top table thead td:nth-child(3) {width:20%;}
+    .right .top table thead td:nth-child(5) {width:26%;}
+    .right .top table tbody td { width:18%;}
+    .right .top table tbody td:nth-child(3) {width:20%;}
+    .right .top table tbody td:nth-child(5) {width:26%;}
+    .right .top h3 { font-size:16px;}
+    .right .bottom h3 { font-size:16px;}
+  }

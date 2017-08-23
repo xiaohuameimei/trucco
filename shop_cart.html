@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/shop_cart.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/shop cart.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="visible-xs title">
+            <h3>我的购物车</h3>
+            <button onclick="returnBack()"><img src="images/about_1_xs.png"></button>
+        </div>
+        <div class="container hidden-xs">
+            <div class="top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <a href="index.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-5">
+                        <form class="input-group search">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">    <img src="images/search.png" ></button>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="col-md-6 col-sm-6 login">
+                            <a href="login.html" id="login">登录</a>
+                            <a href="reg.html" id="reg">注册</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 shop_cart">
+                            <a href="shop_cart.html">我的购物车
+                            <img src="images/shop_cart.png">
+                            <span>(0)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default hidden-xs">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="about.html">品牌介绍</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                            <li><a href="product.html">产品中心</a></li>
+                            <li><a href="contact_us.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="middle">
+        <div class="container">
+            <div class="position hidden-xs">
+                <p>您的当前位置：<a href="index.html">首页</a>><a href="#">我的购物车</a></p>
+            </div>
+            <div class="top hidden-xs">
+                <div class="schedule">
+                    <img src="images/shop-car_schedule.png">
+                    <div class="schedule_text row">
+                        <span class="col-md-4 col-sm-4">我的购物车</span>
+                        <span class="col-md-4 col-sm-4">填写核对订单</span>
+                        <span class="col-md-4 col-sm-4">成功提交订单</span>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td><div class="selectAll">
+                                <img src="images/kuang.png">
+                                全选</div></td>
+                            <td>商品</td>
+                            <td>单价</td>
+                            <td>数量</td>
+                            <td>小计</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <tbody id="shopList">
+                        <tr>
+                            <td>
+                                <div class="shopCheck" index="0">
+                                <img src="images/kuang.png">
+                                </div>
+                            </td>
+                            <td>
+                                <a href="pro_details.html" class="pic col-md-6 col-sm-6">
+                                    <img class="media-object" src="images/order_1.jpg">
+                                </a>
+                                <p class="text col-md-6 col-sm-6">
+                                    <a href="pro_details.html">2017trucco夏季新款休闲时尚套装女装宽松显瘦无袖上衣短裤两件套潮</a>
+                                    <span>颜色分类：黑底脸谱色（上衣+短裤）</span>
+                                </p>
+                            </td>
+                            <td>￥<span class="unitPrice" index="0">150.00</span></td>
+                            <td>
+                                <div class="form-group num">
+                                <button class="minus" index="0">-</button><input type="text" index="0" class="count" value="1"><button class="plus" index="0">+</button>
+                            </div>
+                            </td>
+                            <td>￥<span class="price" index="0">150.00</span></td>
+                            <td><button>收藏</button><button class="delete" index="0" onclick="deleteList(this)">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="shopCheck" index="1">
+                                <img src="images/kuang.png">
+                                </div>
+                            </td>
+                            <td>
+                                <a href="pro_details.html" class="pic col-md-6 col-sm-6">
+                                    <img class="media-object" src="images/order_1.jpg">
+                                </a>
+                                <p class="text col-md-6 col-sm-6">
+                                    <a href="pro_details.html">2017trucco夏季新款休闲时尚套装女装宽松显瘦无袖上衣短裤两件套潮</a>
+                                    <span>颜色分类：黑底脸谱色（上衣+短裤）</span>
+                                </p>
+                            </td>
+                            <td>￥<span class="unitPrice" index="1">150.00</span></td>
+                            <td>
+                                <div class="form-group num">
+                                <button class="minus" index="1">-</button><input type="text" index="1" class="count" value="1"><button class="plus" index="1">+</button>
+                            </div>
+                            </td>
+                            <td>￥<span class="price" index="1">150.00</span></td>
+                            <td><button>收藏</button><button class="delete" index="1" onclick="deleteList(this)">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="shopCheck" index="2">
+                                <img src="images/kuang.png">
+                                </div>
+                            </td>
+                            <td>
+                                <a href="pro_details.html" class="pic col-md-6 col-sm-6">
+                                    <img class="media-object" src="images/order_1.jpg">
+                                </a>
+                                <p class="text col-md-6 col-sm-6">
+                                    <a href="pro_details.html">2017trucco夏季新款休闲时尚套装女装宽松显瘦无袖上衣短裤两件套潮</a>
+                                    <span>颜色分类：黑底脸谱色（上衣+短裤）</span>
+                                </p>
+
+                            </td>
+                            <td>￥<span class="unitPrice" index="2">150.00</span></td>
+                            <td>
+                                <div class="form-group num">
+                                <button class="minus" index="2">-</button><input type="text" index="2" class="count" value="1"><button class="plus" index="2">+</button>
+                            </div>
+                            </td>
+                            <td>￥<span class="price" index="2">150.00</span></td>
+                            <td><button>收藏</button><button class="delete" index="2" onclick="deleteList(this)">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="shopCheck" index="3">
+                                <img src="images/kuang.png">
+                                </div>
+                            </td>
+                            <td>
+                                <a href="pro_details.html" class="pic col-md-6 col-sm-6">
+                                    <img class="media-object" src="images/order_1.jpg">
+                                </a>
+                                <p class="text col-md-6 col-sm-6">
+                                    <a href="pro_details.html">2017trucco夏季新款休闲时尚套装女装宽松显瘦无袖上衣短裤两件套潮</a>
+                                    <span>颜色分类：黑底脸谱色（上衣+短裤）</span>
+                                </p>
+                            </td>
+                            <td>￥<span class="unitPrice" index="3">150.00</span></td>
+                            <td>
+                                <div class="form-group num">
+                                <button class="minus" index="3">-</button><input type="text" index="3" class="count" value="1"><button class="plus" index="3">+</button>
+                            </div>
+                            </td>
+                            <td>￥<span class="price" index="3">150.00</span></td>
+                            <td><button>收藏</button><button class="delete" index="3" onclick="deleteList(this)">删除</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="top visible-xs">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td><div class="selectAll2">
+                                <img src="images/kuang.png">
+                                </div></td>
+                            <td><span>全选</span>商品</td>
+                            <td>单价</td>
+                            <td>数量</td>
+                            <td>小计</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <tbody id="shopList_xs">
+                        <tr>
+                            <td>
+                                <div class="shopCheck2" index="0">
+                                <img src="images/kuang.png">
+                                </div>
+                            </td>
+                            <td>
+                                <a href="order_details.html" class="pic col-xs-6">
+                                    <img class="media-object" src="images/order_xs_01.jpg">
+                                </a>
+                                <p class="text col-xs-6">
+                                    <a href="order_details.html">trucco休闲时尚套装</a>
+                                    <span>颜色：黑底脸谱色</span>
+                                </p>
+                            </td>
+                            <td>￥150.00</td>
+                            <td>
+                                1
+                            </td>
+                            <td>￥150.00</td>
+                            <td><button>收藏</button><button class="delete1" index="0" onclick="deleteList_xs(this)">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="shopCheck2" index="1">
+                                <img src="images/kuang.png">
+                                </div>
+                            </td>
+                            <td>
+                                <a href="order_details.html" class="pic col-xs-6">
+                                    <img class="media-object" src="images/order_xs_01.jpg">
+                                </a>
+                                <p class="text col-xs-6">
+                                    <a href="order_details.html">trucco休闲时尚套装</a>
+                                    <span>颜色：黑底脸谱色</span>
+                                </p>
+                            </td>
+                            <td>￥150.00</td>
+                            <td>
+                                1
+                            </td>
+                            <td>￥150.00</td>
+                            <td><button>收藏</button><button class="delete1" index="1" onclick="deleteList_xs(this)">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="shopCheck2" index="2">
+                                <img src="images/kuang.png">
+                                </div>
+                            </td>
+                            <td>
+                                <a href="order_details.html" class="pic col-xs-6">
+                                    <img class="media-object" src="images/order_xs_01.jpg">
+                                </a>
+                                <p class="text col-xs-6">
+                                    <a href="order_details.html">trucco休闲时尚套装</a>
+                                    <span>颜色：黑底脸谱色</span>
+                                </p>
+                            </td>
+                            <td>￥150.00</td>
+                            <td>
+                                1
+                            </td>
+                            <td>￥150.00</td>
+                            <td><button>收藏</button><button class="delete1" index="3" onclick="deleteList_xs(this)">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="shopCheck2" index="3">
+                                <img src="images/kuang.png">
+                                </div>
+                            </td>
+                            <td>
+                                <a href="order_details.html" class="pic col-xs-6">
+                                    <img class="media-object" src="images/order_xs_01.jpg">
+                                </a>
+                                <p class="text col-xs-6">
+                                    <a href="order_details.html">trucco休闲时尚套装</a>
+                                    <span>颜色：黑底脸谱色</span>
+                                </p>
+                            </td>
+                            <td>￥150.00</td>
+                            <td>
+                                1
+                            </td>
+                            <td>￥150.00</td>
+                            <td><button>收藏</button><button class="delete1" index="3" onclick="deleteList_xs(this)">删除</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bottom">
+                <p>商品总数：<span id="shopNumber">0</span> 件</p>
+                <p>商品总价（不含运费）：<span>￥<span id="total">0.00</span></span></p>
+                <a href="confirm_order.html">去结算</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>版权所有 trucco有限责任公司 中国丽人网　提供技术支持 ◎ 服装品牌大全 ◎知名品牌招商</p>
+        <p>《中华人民共和国增值电信业务经营许可证》浙B2-20110190</p>
+    </div>
+</body>
+</html>

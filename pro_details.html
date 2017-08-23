@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>产品详情页</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/pro_details.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/pro details.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="visible-xs title">
+            <h3>产品详情</h3>
+            <button onclick="returnBack()"><img src="images/about_1_xs.png"></button>
+        </div>
+        <div class="container hidden-xs">
+            <div class="top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <a href="index.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-5">
+                        <form class="input-group search">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">    <img src="images/search.png" ></button>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="col-md-6 col-sm-6 login">
+                            <a href="login.html" id="login">登录</a>
+                            <a href="reg.html" id="reg">注册</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 shop_cart">
+                            <a href="shop_cart.html">我的购物车
+                            <img src="images/shop_cart.png">
+                            <span>(0)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default  hidden-xs">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="about.html">品牌介绍</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                            <li class="active"><a href="product.html">产品中心</a></li>
+                            <li><a href="contact_us.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="middle">
+        <div class="container">
+            <div class="position hidden-xs">
+                <p>您的当前位置：<a href="index.html">首页</a>><a href="product.html">产品中心</a>><a href="#">产品详情</a></p>
+            </div>
+            <div class="title hidden-xs">
+                <h3>产品详情</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 sidebar hidden-xs">
+                    <div class="sidebar_title">
+                        <h3>服装款式</h3>
+                        <span>Fashion style</span>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="#">最新款式<span>>></span></a></li>
+                        <li><a href="#">春季女装<span>>></span></a></li>
+                        <li><a href="#">夏季女装<span>>></span></a></li>
+                        <li><a href="#">秋季女装<span>>></span></a></li>
+                        <li><a href="#">冬季女装<span>>></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 col-sm-10 list details">
+                    <div class="top">
+                        <div class="col-md-6 col-sm-6 col-xs-12 left">
+                                <div class="col-md-12 col-sm-12 col-xs-12 md_pic">
+                                    <img id="bigImg" src="images/pro_details_01.jpg">
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-md-3 col-sm-3 col-xs-3 sm_pic active">
+                                        <img class="hoverImg" src="images/pro_details_01.jpg">
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3 sm_pic">
+                                        <img class="hoverImg" src="images/pro_details_03.jpg">
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3 sm_pic">
+                                        <img class="hoverImg" src="images/pro_details_04.jpg">
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-3 sm_pic">
+                                        <img class="hoverImg" src="images/pro_details_05.jpg">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 right">
+                            <h3>2017夏季韩版新款时尚修身清新短袖印花白色a型连衣裙女装两件套</h3>
+                            <p>夏装新品发售， 涤纶材质 具有较高的强度与弹性恢复能力 尺码请参考详情 收藏优先发货</p>
+                            <div class="price">
+                                <div class="col-md-8 col-sm-8 col-xs-8 left">
+                                    <p>价格：￥199.00</p>
+                                    <p>促销价：<span>￥199.00</span><i>新品优惠购</i></p>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 right">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 text">
+                                        <p>99</p>
+                                        <h5>累计平均</h5>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6 text">
+                                        <p>99</p>
+                                        <h5>交易成功</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <p><span>优惠</span><img src="images/pro_details_tao.png"><span>淘金币可抵2.66元</span></p>
+                            <p>
+                            <span>配送</span> 广东广州 至
+                                <select>
+                                    <option>广西南宁青秀区</option>
+                                    <option>云南昆明五华区</option>
+                                    <option>重庆涪陵区</option>
+                                    <option>上海静安区</option>
+                                </select>
+                                快递
+                                <select>
+                                    <option>免运费</option>
+                                </select>
+                                卖家承诺24小时内发货
+                            </p>
+                            <div class="form-group size">
+                                <p class="text-right">尺码助手</p>
+                                <div class="sizeOption col-sm-12 col-xs-6">
+                                    <label>尺码</label>
+                                    <button class="btn sizeBtn">L</button>
+                                    <button class="btn sizeBtn">M</button>
+                                    <button class="btn sizeBtn">S</button>
+                                    <button class="btn sizeBtn">XL</button>
+                                </div>
+                                <div class="center col-xs-6 visible-xs" >
+                                    <button type="button" class="btn btn-default"><i class="fa fa-star"></i>收藏宝贝</button>
+                                    <button type="button" class="btn btn-default"><i class="fa fa-share-alt"></i>分享</button>
+                                </div>
+                            </div>
+                            <div class="form-group pic">
+                                <label class="hidden-xs">颜色</label>
+                                <label class="visible-xs">颜色分类</label>
+                                <button class="btn imgBtn"><img src="images/pro_details_06.jpg"></button>
+                            </div>
+                            <div class="form-group num">
+                                <label>数量:</label>
+                                <button id="minus">-</button><input type="text" id="count" value="1"><button id="plus">+</button>
+                                <span>件(库存2017件)</span>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 buy hidden-xs">
+                                    <a href="confirm_order.html" class="btn one col-md-4 col-sm-5 col-xs-5" role="button">立即购买</a>
+                                    <a href="shop_cart.html" class="btn two col-md-8 col-sm-7 col-xs-7" role="button"> <img src="images/pro_details_shopping.png">加入购物车</a>
+                            </div>
+                            <p><span>承诺</span><img src="images/pro_details_icon1.jpg"><span>七天无理由退换货</span><img src="images/pro_details_icon2.jpg"><span>新品</span></p>
+                            <p><span>支付</span><img src="images/pro_details_icon3.jpg"><span>支付宝支付</span></p>
+                            <div class="col-md-12 col-sm-12 col-xs-12 buy visible-xs">
+                                    <a href="confirm_order.html" class="btn one col-md-4 col-sm-5 col-xs-5" role="button">立即购买</a>
+                                    <a href="shop_cart.html" class="btn two col-md-8 col-sm-7 col-xs-7" role="button"> <img src="images/pro_details_shopping.png">加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="center col-md-12 col-sm-12 hidden-xs" >
+                    <div class="col-md-2 col-sm-2">
+                        <button><i class="fa fa-star"></i>收藏宝贝</button>
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <button><i class="fa fa-share-alt"></i>分享</button>
+                    </div>
+
+                    </div>
+                    <div class="bottom col-md-12 col-sm-12">
+                        <div class="col-md-12 col-sm-12">
+                            <h3>产品参数:</h3>
+                        </div>
+                        <ul class="col-md-12 col-sm-12 col-xs-12">
+                            <li>品牌: other/其他</li>
+                            <li>货号: 蓬蓬裙两件套裙装</li>
+                            <li>颜色分类: 黑色</li>
+                            <li>尺码: L M S XL</li>
+                            <li>上市时间: 2017年夏</li>
+                            <li>材质成分: 聚酯纤维100%</li>
+                            <li>货号: 711C0182</li>
+                            <li>风格: 街头</li>
+                            <li>袖型: 常规</li>
+                            <li>腰型: 高腰</li>
+                            <li>适用年龄: 18-25周岁</li>
+                            <li>袖型: 其他</li>
+                            <li>图案: 纯色</li>
+                            <li>填充物: 其他</li>
+                            <li>礼服裙长: 短裙</li>
+                            <li>袖长: 短袖</li>
+                            <li>通勤: 文艺</li>
+                            <li>风格: 通勤</li>
+                            <li>廓形: H型</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>版权所有 trucco有限责任公司 中国丽人网　提供技术支持 ◎ 服装品牌大全 ◎知名品牌招商</p>
+        <p>《中华人民共和国增值电信业务经营许可证》浙B2-20110190</p>
+    </div>
+
+
+</body>
+</html>

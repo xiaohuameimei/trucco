@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>登录页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" scr="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" scr="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="visible-xs title">
+            <h3>登录</h3>
+            <button onclick="returnBack()"><img src="images/about_1_xs.png"></button>
+        </div>
+        <div class="container hidden-xs">
+            <div class="top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <a href="index.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-5">
+                        <form class="input-group search">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">    <img src="images/search.png" ></button>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="col-md-6 col-sm-6 login">
+                            <a href="login.html" id="login">登录</a>
+                            <a href="reg.html" id="reg">注册</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 shop_cart">
+                            <a href="shop_cart.html">我的购物车
+                            <img src="images/shop_cart.png">
+                            <span>(0)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default  hidden-xs">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="about.html">品牌介绍</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                            <li><a href="product.html">产品中心</a></li>
+                            <li><a href="contact_us.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="middle row">
+        <div class="container">
+            <div class="login">
+            <h3>账号登录</h3>
+                <form>
+                    <div class="input-group name col-md-12 col-sm-12 col-xs-12">
+                        <span class="input-group-addon" id="basic-addon1"><img src="images/login_01.png"></span>
+                        <input type="text" class="form-control" placeholder="用户名/手机号/邮箱">
+                    </div><!-- /input-group -->
+                    <div class="input-group password col-md-12 col-sm-12 col-xs-12">
+                        <span class="input-group-addon" id="basic-addon1"><img src="images/login_02.png"></span>
+                        <input type="password" class="form-control" placeholder="密码">
+                    </div><!-- /input-group -->
+                    <div  class="form-group num">
+                        <div class="col-md-12 col-sm-12 col-xs-12 input-group">
+                            <input type="text" class="form-control" placeholder="验证码">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">获取验证码</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default" id="login">登录</button>
+                    </div>
+                </form>
+                <div class="other">
+                    <h4>其他登录</h4>
+                    <div class="icon">
+                        <a href="#"><img src="images/login_qq.jpg"></a>
+                        <a href="#"><img src="images/login_sina.jpg"></a>
+                        <a href="#"><img src="images/login_weChat.jpg"></a>
+                    </div>
+                </div>
+        </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <p>版权所有 trucco有限责任公司 中国丽人网　提供技术支持 ◎ 服装品牌大全 ◎知名品牌招商</p>
+        <p>《中华人民共和国增值电信业务经营许可证》浙B2-20110190</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-14 09:56:44
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-12 17:46:33
+*/
+.middle { background:url(../images/reg_background.jpg) no-repeat center 0; padding:55px 0 20px ;}
+
+.middle .reg { width: 49%; background:#fff;margin:0 auto;  padding:0 53px 0 15px;}
+.middle .reg h3 {text-align:center; padding-left:22px; font-size:24px; line-height:70px;}
+.middle .reg p { margin-bottom: 10px; color:#777;}
+.middle .reg p span { color:#000; }
+.middle .reg p a { color:#f00;}
+.reg .control-label { line-height:57px; padding-top:0; font-size:20px; font-weight:normal;}
+.reg input { line-height:55px; height: 57px; border-radius:0; border:1px solid #959595; }
+
+.reg form label i { font-style: normal; color:#f00;}
+.reg form .heading{ width:26%;}
+.inputBox { width:74%;}
+.middle form .num span{ background:#fff; border:1px solid #959595; border-left:0;}
+.middle form .num input { height:55px; line-height:55px; border-radius:0; border:1px solid #959595;  border-right:0; width:100%;}
+.middle form .num span button { border:0; margin:0 17px; border-radius:15px; background:#f00; color:#fff;}
+.middle form .num .btn { padding:3px 20px; font-size:20px;}
+.middle .input-group-btn:last-child > .btn { margin-left:0; border-top-left-radius: 15px; border-bottom-left-radius: 15px;}
+.form-horizontal .form-group{ margin-left:0; margin-right:0;}
+button#reg { border:0;}
+.form-group {overflow:hidden;}
+.middle .reg .agree { overflow:hidden; cursor: pointer;}
+.middle .reg .agree p { line-height:25px; color:#000;}
+button#reg { width:100%; padding:10px 0; background:#f00; border-radius:8px; color:#fff; font-size:24px; margin-bottom:25px;}
+.middle .reg .agree .check { float:left; width:5%; margin-top:2px;}
+.middle .reg .agree .click { background:url(../images/gou.png) no-repeat 0.3%;}
+
+
+@media screen and (max-width: 1024px){
+  .middle { padding-top: 26px; padding-bottom: 20px; }
+  .middle .reg { width: 61%;  padding: 0 38px 0 15px;}
+  .middle .input-group {
+    margin-bottom: 18px;}
+  .middle .reg h3 {
+    margin-bottom: 15px;}
+  .middle .reg input { line-height:38px; height: 38px; }
+  .middle form .num { margin-bottom:18px;}
+  .middle form .num input { height:38px; line-height: 38px;}
+  .middle form .num .input-group { margin-bottom: 0px;}
+  .middle form .num .btn {
+    padding: 4px 8px; }
+  .reg .control-label { line-height:38px; font-size:18px; font-weight:normal;}
+  .form-group {
+    margin-bottom: 18px;}
+  .middle .reg .agree p { font-size:18px; }
+  .middle .reg .agree .check { margin-top: 3px;}
+  button#reg { width:95%; }
+  .middle form .num .btn { padding:1px 8px; font-size:17px;}
+  button#reg { padding:7px;}
+}
+
+  @media screen and (min-width: 991px){
+    .middle .reg .agree { margin-left:-3%;}
+  }
+
+
+
+  @media screen and (max-width: 767px){
+  .middle .reg { width: 80%;  padding: 20px 55px 18px 10px;}
+  .middle .reg p { margin-bottom: 10px; color:#777; font-size:18px;}
+  .middle .reg input { line-height:42px; height: 42px; }
+  .reg .control-label { line-height:42px; text-align:right;}
+  .middle form .num { margin-bottom:0;}
+  .middle form .num input { height:42px; line-height: 42px;}
+  .middle form .num .btn {
+    padding: 4px 25px; font-size:18px;}
+    button#reg { width:93%; margin-left: 7%;}
+     button#reg { padding:10px 0;}
+  .middle .reg .agree { padding-left: 5%; margin-top:12px;
+   }
+   .middle .reg .agree .check {width:7%;}
+ }
+
+ @media screen and (max-width: 585px){
+  .middle .reg{ padding:20px 6% 18px 10px}
+ }
+
+ @media screen and (max-width: 535px){
+
+  .middle .reg h3 {font-size:20px;}
+  .middle .reg p { font-size:15px;}
+  .reg .control-label {font-size:15px; line-height:35px;}
+  .middle .reg input { height: 35px; line-height:35px;}
+  .middle form .num span button { margin-right:7px;}
+  .middle form .num .btn { font-size:15px;}
+  .middle .reg .agree p { font-size:15px;}
+  button#reg {font-size:20px; padding:6px 0;}
+ }
+
+ @media screen and (max-width: 470px){
+  .middle .reg h3 {font-size:18px;}
+  .middle .reg p { font-size:12px;}
+  .reg .control-label {font-size:12px; line-height:35px;}
+  .middle .reg input { height: 35px; line-height:35px;}
+  .middle form .num .btn { font-size:12px;}
+  .middle .reg .agree p { font-size:12px;}
+   button#reg {font-size:18px;}
+   .middle form .num .btn { padding:4px 5px;}
+ }
+
+ @media screen and (max-width: 400px){
+  .middle .reg { width:90%;}
+ }

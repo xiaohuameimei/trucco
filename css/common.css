@@ -1,0 +1,86 @@
+.header .top { padding: 30px 0;}
+.header .top input {height: 45px; border-radius: 7px; border:#ff0000 2px solid;}
+.header .top button { padding: 7px 15px 5px 18px; background: #ff0000; border-radius: 7px; border: 0;outline: none; }
+.header .search { padding-left:30px; width:90%;}
+.header .login { padding-left:12%;}
+.header .login a { padding:0 8px; margin:15px 0; font-size:12px;}
+.header .login a:nth-child(2) { border-left: 1px solid #000;}
+.header .shop_cart { line-height:45px; font-size:12px;}
+.header .nav li:nth-child(1){ margin-left:1.4%;}
+.header .navbar-nav > li {
+    float: left;
+    margin-right:6%;
+  }
+.header .nav li a { padding:0 20px;}
+
+
+.footer { background:#242424; padding:22px 0 18px;}
+.footer p { color:#fff; text-align: center; line-height:22px;}
+
+@media screen and (max-width: 1024px){
+  .header .navbar-nav > li {
+    float: left;
+    margin-right:2%;
+         }
+  .header .nav li a { padding:0 12px; font-size:24px;}
+  .header .login { padding-left: 10%;}
+  .header .search { margin: 0 auto;}
+  .header .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { font-size:24px;}
+  }
+  @media screen and (max-width: 850px){
+  .header .search { padding-left: 12%;}
+  }
+
+  @media screen and (max-width: 767px){
+  .header .title { background:#e1e1e1; margin:0;}
+  .header .title h3 { text-align:center; line-height:98px; font-size:30px;}
+  .header .title button { border:0; position:absolute; top:25px; left: 5%;}
+  .navbar-default {background:transparent;}
+  .header .navbar { right: 0; margin-top: -86px;}
+  .header .navbar-toggle { width: 15%; margin-top:-2%;}
+  .header .search { padding-left: 0;}
+  .header .top .logo img { width: 100%;}
+  .header .navbar-toggle img { width: 100%;}
+}
+@media screen and (max-width: 665px){
+  .header .navbar-toggle { margin-top: -1%;}
+  .header .title h3 { font-size:26px; line-height:90px;}
+  .header .title button img{ width: 90%;}
+
+}
+@media screen and (max-width: 600px){
+  .header .navbar-toggle { margin-top: 0;}
+}
+@media screen and (max-width: 550px){
+  .header .navbar-toggle { margin-top: 1%;}
+  .header .search input{ height: 37px;}
+  .header .search button { height: 37px;}
+  .header .top button{ padding:0;}
+  .header .search button img { width: 37px; padding:5px;}
+  .header .title h3 { font-size:24px; line-height:85px;}
+  .header .title button img{ width: 80%;}
+}
+
+@media screen and (max-width: 450px){
+  .header .navbar { right: 0; margin-top: -77px;}
+  .header .title h3 { font-size:22px; line-height:80px;}
+}
+
+@media screen and (max-width: 400px){
+  .header .navbar { right: 0; margin-top: -75px;}
+  .header .navbar-toggle { width: 18%;}
+  .header .search input{ height: 32px;}
+  .header .search button { height: 32px;}
+  .header .top button{ padding:0;}
+  .header .search button img { width: 32px; padding:5px;}
+  .header .title button img{ width: 70%;}
+}
+@media screen and (max-width: 375px){
+  .header .navbar { right: 0; margin-top: -70px;}
+  .header .navbar-toggle { width: 17%;}
+  .header .title h3 { font-size:20px; line-height:75px;}
+  .header .title button img{ width: 65%;}
+}
+
+
+

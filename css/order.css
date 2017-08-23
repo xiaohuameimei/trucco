@@ -1,0 +1,96 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-14 15:27:51
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-13 10:17:18
+*/
+.position { margin: 16px 0 38px;}
+.left .top { background:#e0e0e0; text-align: center; padding-bottom: 40px;}
+.left .top h3 { background:#000; font-weight: normal; color: #fff;line-height:65px; font-size: 18px; margin-bottom: 15px;}
+.left .top li { line-height:40px; font-size:14px;}
+
+.left .bottom { background:#e0e0e0; text-align: center; padding-bottom:245px; margin-bottom:87px;}
+.left .bottom h3 { background:#000; font-weight: normal; color: #fff;line-height:65px; font-size:18px; margin-bottom: 15px;}
+.left .bottom li { line-height:40px; font-size:14px;}
+.left li:hover { background:url(../images/sidebar_icon.png) no-repeat 20% center;}
+.left li:hover a { color:#f00;}
+.left a { display: block;}
+.left .active { background:url(../images/sidebar_icon.png) no-repeat 20% center;}
+.left .active a { color:#f00;}
+
+.right { padding-left:28px; }
+.right .top .nav-tabs li {margin-right:11%;}
+.right .top .nav-tabs li a { font-size:18px;}
+.right .top .nav-tabs > li.active > a { color: #f00;
+    background-color: #fff;
+}
+.right .nav-tabs {border: 0;}
+
+.right .tab-pane table thead { background:#dadada; font-size:18px; text-align:center;}
+.right table tbody tr td { vertical-align: middle; text-align:center;}
+.right table tbody tr td:nth-child(1) { width:38%;}
+.right table tbody tr td:nth-child(1) img { padding: 8% 6% 9% 9%; width: 100%;}
+.right table tbody tr td:nth-child(1) .text{text-align:left; vertical-align:middle; margin-top:14%; line-height:22px;}
+.right table tbody tr td:nth-child(4) { color:#f00;}
+.right table tbody tr td:nth-child(5) , .right table tbody tr td:nth-child(6) { width:14%;}
+.right nav { text-align:center;}
+.pagination { margin-bottom:80px; font-size:12px;}
+.pagination li:nth-child(8) span{ background:#fff;}
+.pagination .active a { color:#f00;}
+.pagination li:hover {color:#f00;}
+.badge { position:absolute; top:-15px; right:-42%;}
+
+
+@media screen and (max-width: 1024px){
+  .navbar-nav > li {
+    float: left;
+    margin-right:5.8%;
+         }
+  .header .nav li a { padding:0 12px;}
+  .header .login { padding-left: 10%;}
+  .header .search { padding-left: 0;  width:100%;}
+  .right table tbody tr td:nth-child(1) img { padding:0; padding-right: 5%;}
+  .right table tbody tr td:nth-child(1) .text{ vertical-align:middle; margin-top: 10%;}
+  .right .top .nav-tabs li {margin-right:9%;}
+  .left .active { background-position: 10%;}
+  .left li:hover { background-position: 10%;}
+  }
+
+  @media screen and (max-width:942px){
+    .right table tbody tr td:nth-child(1) .text{ vertical-align:middle; margin-top:5%;}
+  }
+
+  @media screen and (max-width: 767px){
+  .middle { font-size:18px;}
+  .list { border:1px solid #959595;}
+  .table-bordered > tbody > tr > td { border-color: #959595;}
+  .table > tbody > tr > td{ border-top:  1px solid #959595;}
+  .menu {margin-top:30px;}
+  .menu tr td { width:33.33%; text-align:center;}
+  .list tbody tr td:nth-child(1) .text{ vertical-align:middle; width: 46%; padding-left:5%; padding-top:16%;}
+  .list tbody tr td:nth-child(1) { width:39%;}
+  .list tbody tr td:nth-child(1) img { width:100%;}
+  .list tbody tr td:nth-child(1) .pic{ width:51%;}
+  .sum span{ color:#f00; }
+   .sum {margin-bottom:60px;}
+   .table > tbody > tr > td.active { background:#fff;}
+  .table > tbody > tr > td.active a{ color:#f00;}
+  .nav-tabs { border-bottom:0;
+
+}
+
+ @media screen and (max-width: 639px){
+  .middle { font-size:15px;}
+ }
+
+ @media screen and (max-width: 544px){
+  .middle { font-size:12px;}
+ }
+
+ @media screen and (max-width: 451px){
+  .list tbody tr td:nth-child(1) .text { padding-top:5%;}
+ }
+
+ @media screen and (max-width: 320px){
+  .list tbody tr td:nth-child(1) img { margin-top:16%;}
+ }

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>产品中心</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="visible-xs title">
+            <h3>产品中心</h3>
+            <button onclick="returnBack()"><img src="images/about_1_xs.png"></button>
+        </div>
+        <div class="container hidden-xs">
+            <div class="top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <a href="index.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-5">
+                        <form class="input-group search">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">    <img src="images/search.png" ></button>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="col-md-6 col-sm-6 login">
+                            <a href="login.html" id="login">登录</a>
+                            <a href="reg.html" id="reg">注册</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 shop_cart">
+                            <a href="shop_cart.html">我的购物车
+                            <img src="images/shop_cart.png">
+                            <span>(0)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default  hidden-xs">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="about.html">品牌介绍</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                            <li class="active"><a href="product.html">产品中心</a></li>
+                            <li><a href="contact_us.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="middle">
+        <div class="container">
+            <div class="visible-xs">
+                <ul class="nav nav-tabs" role="tablist" id="tab">
+                    <li role="presentation" class="active"><a href="#new" aria-controls="new" role="tab" data-toggle="tab">最新款式</a></li>
+                    <li role="presentation"><a href="#spring" aria-controls="spring" role="tab" data-toggle="tab">春季女装</a></li>
+                    <li role="presentation"><a href="#summer" aria-controls="summer" role="tab" data-toggle="tab">夏季女装</a></li>
+                    <li role="presentation"><a href="#autumn" aria-controls="autumn" role="tab" data-toggle="tab">秋季女装</a></li>
+                    <li role="presentation"><a href="#winter" aria-controls="winter" role="tab" data-toggle="tab">冬季女装</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="new">
+                        <ul class="col-md-10 col-sm-10 list">
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_1.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_2.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_3.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_4.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_5.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_6.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="spring">
+                        <ul class="col-md-10 col-sm-10 list">
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_1.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_2.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_3.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_4.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_5.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_6.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="summer">
+                        <ul class="col-md-10 col-sm-10 list">
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_1.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_2.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_3.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_4.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_5.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_6.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="autumn">
+                        <ul class="col-md-10 col-sm-10 list">
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_1.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_2.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_3.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_4.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_5.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_6.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="winter">
+                        <ul class="col-md-10 col-sm-10 list">
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_1.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_2.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_3.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_4.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_5.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+
+                            <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                                <a href="pro_details.html"><img src="images/pro_6.jpg"></a>
+                                <div class="text">
+                                    <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                                    <span>￥399.00</span>
+                                    <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="position hidden-xs">
+                <p>您的当前位置：<a href="index.html">首页</a>><a href="#">产品中心</a></p>
+            </div>
+            <div class="title hidden-xs">
+                <h3>产品中心</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 sidebar hidden-xs">
+                    <div class="sidebar_title">
+                        <h3>服装款式</h3>
+                        <span>Fashion style</span>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="#">最新款式<span>>></span></a></li>
+                        <li><a href="#">春季女装<span>>></span></a></li>
+                        <li><a href="#">夏季女装<span>>></span></a></li>
+                        <li><a href="#">秋季女装<span>>></span></a></li>
+                        <li><a href="#">冬季女装<span>>></span></a></li>
+                    </ul>
+                </div>
+                <ul class="col-md-10 col-sm-10 list hidden-xs">
+                    <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                        <a href="pro_details.html"><img src="images/pro_1.jpg"></a>
+                        <div class="text">
+                            <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                            <span>￥399.00</span>
+                            <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                        </div>
+                    </li>
+
+                    <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                        <a href="pro_details.html"><img src="images/pro_2.jpg"></a>
+                        <div class="text">
+                            <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                            <span>￥399.00</span>
+                            <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                        </div>
+                    </li>
+
+                    <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                        <a href="pro_details.html"><img src="images/pro_3.jpg"></a>
+                        <div class="text">
+                            <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                            <span>￥399.00</span>
+                            <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                        </div>
+                    </li>
+
+                    <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                        <a href="pro_details.html"><img src="images/pro_4.jpg"></a>
+                        <div class="text">
+                            <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                            <span>￥399.00</span>
+                            <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                        </div>
+                    </li>
+
+                    <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                        <a href="pro_details.html"><img src="images/pro_5.jpg"></a>
+                        <div class="text">
+                            <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                            <span>￥399.00</span>
+                            <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                        </div>
+                    </li>
+
+                    <li class="col-md-4 col-sm-4 col-xs-6 pro">
+                        <a href="pro_details.html"><img src="images/pro_6.jpg"></a>
+                        <div class="text">
+                            <h3><a href="pro_details.html">天天特价皮风衣修身皮外套大码女装青年时尚显瘦女士皮衣女中长款</a></h3>
+                            <span>￥399.00</span>
+                            <p><a href="confirm_order.html" class="btn btn-default" role="button">立即购买</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <nav aria-label="Page navigation" class="hidden-xs">
+                <ul class="pagination">
+                    <li><a href="#">首页</a></li>
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">上一页</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><span>...</span></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">下一页</span>
+                        </a>
+                    </li>
+                    <li><a href="#">尾页</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>版权所有 trucco有限责任公司 中国丽人网　提供技术支持 ◎ 服装品牌大全 ◎知名品牌招商</p>
+        <p>《中华人民共和国增值电信业务经营许可证》浙B2-20110190</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.carousel-indicators .active { background:#f00; width:27px; height:27px; border-radius: 20px; border: 0; margin:0 2% 0 2%;}
+.carousel-indicators li {  width:27px; height:27px; background:#000; border-radius: 20px; border: 0; margin:0 2% 0 2%;}
+.carousel-indicators { bottom: 34px; }
+.item img { width:100%;}
+
+.recommend { margin: 9px 0 70px;}
+.recommend .title h3{ line-height:40px; border-bottom: 2px solid #000; border-left: 5px solid #000; padding-left: 8px; font-size: 18px; font-weight: normal;}
+.recommend img { margin:25px 0 ; width:100%; padding:0 12px;}
+.recommend .list h3 { line-height:22px; font-size:14px; text-align: center; font-weight:normal;}
+.recommend .list h3 span {color:#f00;}
+
+@media screen and (max-width: 1000px){
+    .carousel-indicators { bottom: 27px; }
+    .carousel-indicators .active { background:#f00; width:22px; height:22px; border-radius: 20px; border: 0;  margin:0 2% 0 2%;}
+.carousel-indicators li {  width:22px; height:22px; background:#000; border-radius: 20px; border: 0; margin:0 2% 0 2%;}
+}
+
+@media screen and (max-width: 767px){
+    .icon {background:#eaeaea; padding:40px 0; margin-bottom: 20px;}
+    .icon a {display: block;}
+    .icon h3 { text-align:center; margin-top:15px; font-size:20px;}
+    .icon a img { margin:0 auto; display: block; width: auto;}
+    .recommend img { margin:25px 0 ; width:100%; padding: 0 10px;}
+    .focusBox { position: relative; width:100%; height:350px; overflow: hidden; }
+    .focusBox .hd li{margin: 0 20px; background:url(../images/dot.png) no-repeat 0 -22px; height: 20px; background-size: 100%; overflow: hidden; width: 20px; cursor: pointer;
+    display:inline-block; *display:inline; zoom:1;  _background:url(../images/dot8.png) no-repeat 0 -16px;
+    }
+    .navbar-default .navbar-nav > li > a {
+    color:#f00; font-size:14px;}
+    .navbar-default .navbar-nav > .active > a { background:transparent; color:#f00;  }
+    .header .navbar-default .navbar-nav > .active > a{font-size:14px; }
+    .recommend .list h3 {font-size:18px;}
+
+  }
+
+ @media screen and (max-width: 500px){
+    .icon h3 { font-size:18px;}
+    .recommend .title h3 { font-size:16px; line-height:35px;}
+    .recommend .list h3 {font-size:14px;}
+ }
+
+ @media screen and (max-width: 450px){
+    .carousel-indicators li {  width:17px; height:17px;}
+    .carousel-indicators .active { width:17px; height:17px;}
+    .carousel-indicators { bottom: 15px; }
+    .icon h3 { font-size:16px;}
+
+
+ }
+  @media screen and (max-width: 395px){
+    .carousel-indicators { bottom: 10px; }
+    .icon a img { width: 90%;}
+    .icon h3 { font-size:14px;}
+    .recommend .title h3 { font-size:14px; line-height:27px;}
+    .recommend .list h3 {font-size:12px;}
+  }

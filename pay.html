@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>支付</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/pay.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/layer.js"></script>
+    <script type="text/javascript" src="js/pay.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="visible-xs title">
+            <h3>支付页</h3>
+            <button onclick="returnBack()"><img src="images/about_1_xs.png"></button>
+        </div>
+        <div class="container hidden-xs">
+            <div class="top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <a href="index.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-5">
+                        <form class="input-group search">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">    <img src="images/search.png" ></button>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="col-md-6 col-sm-6 login">
+                            <a href="login.html" id="login">登录</a>
+                            <a href="reg.html" id="reg">注册</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 shop_cart">
+                            <a href="shop_cart.html">我的购物车
+                            <img src="images/shop_cart.png">
+                            <span>(0)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default  hidden-xs">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="about.html">品牌介绍</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                            <li><a href="product.html">产品中心</a></li>
+                            <li><a href="contact_us.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="middle">
+        <div class="container">
+            <div class="position hidden-xs">
+                <p>您的当前位置：<a href="index.html">首页</a>><a href="#">支付订单</a></p>
+            </div>
+            <div class="top row">
+                <div class="schedule hidden-xs">
+                    <img src="images/schedule_pay.png">
+                    <div class="schedule_text row">
+                        <span class="col-md-4 col-sm-4">我的购物车</span>
+                        <span class="col-md-4 col-sm-4">填写核对订单</span>
+                        <span class="col-md-4 col-sm-4">成功提交订单</span>
+                    </div>
+                </div>
+                <h2>支付订单</h2>
+                <img src="images/pay_01.png" class="col-md-1 col-sm-2 col-xs-2">
+                <div class="text col-md-11 col-sm-10 col-xs-10">
+                    <h3>您已成功提交订单</h3>
+                    <p>感谢你对我们的信任与支持,请在24小时内完成支付,否则订单将会取消！</p>
+                    <p class="text_left">您的订单编号：12345678910 <p>订单金额：￥600.00</p></p>
+                    <p>您需支付金额：￥600.00</p>
+                </div>
+            </div>
+            <div class="center">
+                <h2>请选择一下付款方式</h2>
+                <h3>网银付款：</h3>
+                <ul class="row">
+                    <li class="col-md-3 col-sm-3 col-xs-6 radio_pay">
+                        <div class="payment">
+                            <img src="images/pay_radio1.png">
+                        </div>
+                        <img src="images/pay_nonghang.jpg">
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-6 radio_pay">
+                        <div class="payment">
+                            <img src="images/pay_radio2.png">
+                        </div>
+                        <img src="images/pay_jianhang.jpg">
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-6 radio_pay">
+                        <div class="payment">
+                            <img src="images/pay_radio2.png">
+                        </div>
+                        <img src="images/pay_gongshang.jpg">
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-6 radio_pay">
+                        <div class="payment">
+                            <img src="images/pay_radio2.png">
+                        </div>
+                        <img src="images/pay_gongshang.jpg">
+                    </li>
+                </ul>
+                <h3>支付平台：</h3>
+
+                <ul class="row">
+                    <li class="col-md-3 col-sm-3 col-xs-6 radio_pay">
+                        <div class="payment">
+                            <img src="images/pay_radio2.png">
+                        </div>
+                        <img src="images/pay_zhifubao.jpg">
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-6 radio_pay">
+                        <div class="payment">
+                            <img src="images/pay_radio2.png">
+                        </div>
+                        <img src="images/pay_caifutong.jpg">
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <h2>确认付款：</h2>
+                <p>支付金额 ：<span>￥600.00</span></p>
+                <p>支付密码：</p>
+                <input type="password" class="inputPassword" maxlength=1><input type="password" class="inputPassword" maxlength=1><input type="password" class="inputPassword" maxlength=1><input type="password" class="inputPassword" maxlength=1><input type="password" class="inputPassword" maxlength=1><input type="password" class="inputPassword" maxlength=1>
+                <a href="#">忘记密码？</a>
+                <p>请输入6位数字支付密码</p>
+                <button id="btn" class="btn" data-toggle="modal">确认付款</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>版权所有 trucco有限责任公司 中国丽人网　提供技术支持 ◎ 服装品牌大全 ◎知名品牌招商</p>
+        <p>《中华人民共和国增值电信业务经营许可证》浙B2-20110190</p>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <img src="images/success_pay.png">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-9 modal_text">
+                        <h3>订单支付成功！</h3>
+                        <p>您的订单号：12345678910</p>
+                        <p>支付金额：￥600.00</p>
+                        <p>订单状态：已付款   待发货</p>
+                        <p>收货信息：赵小敏   广西南宁市青秀区伶俐街伶俐路38-2号伶俐小区10楼1012室</p>
+                        <a href="order_details.html">订单详情</a>
+                        <a href="product.html">继续购物</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <img src="images/failure_pay.png">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-9 modal_text">
+                        <h3>订单支付失败！</h3>
+                        <p>您的订单号：12345678910</p>
+                        <p>支付金额：￥600.00</p>
+                        <p>订单状态：已付款   待发货</p>
+                        <p>收货信息：赵小敏   广西南宁市青秀区伶俐街伶俐路38-2号伶俐小区10楼1012室</p>
+                        <a href="confirm_order.html">返回查看</a>
+                        <a href="pay.html">重新支付</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

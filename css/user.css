@@ -1,0 +1,119 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-14 14:39:53
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-13 11:26:09
+*/
+.position { margin: 16px 0 38px;}
+.left .top { background:#e0e0e0; text-align: center; padding-bottom: 40px;}
+.left .top h3 { background:#000; font-weight: normal; color: #fff;line-height:65px; font-size: 18px; margin-bottom: 15px;}
+.left .top li { line-height:40px; font-size:14px;}
+
+.left .bottom { background:#e0e0e0; text-align: center; padding-bottom:245px; margin-bottom:87px;}
+.left .bottom h3 { background:#000; font-weight: normal; color: #fff;line-height:65px; font-size:18px; margin-bottom: 15px;}
+.left .bottom li { line-height:40px; font-size:14px;}
+.left li:hover { background:url(../images/sidebar_icon.png) no-repeat 20% center;}
+.left li:hover a { color:#f00;}
+.left a { display: block;}
+.left .active { background:url(../images/sidebar_icon.png) no-repeat 20% center;}
+.left .active a { color:#f00;}
+
+
+.right {padding-top:40px; }
+.right .top { padding-left:28px;}
+.right h3 { font-size:18px; font-weight:normal; margin-bottom:7px;}
+.photo img{ width:100%; border-radius:95px;}
+.right tbody li { color:#777; font-size:14px; line-height:40px;}
+.right tbody img { margin:10px 0 ;}
+.right .detail { margin-top:20px; padding-left:25px; text-align:left;}
+.right tbody li img { margin:0 5px;}
+.right .top td { border:1px solid #959595; text-align:center;}
+.right .safe { width:100%;}
+
+.right .bottom h3{ margin-left:28px;}
+.list a {display: block;}
+.list a img { display: block; width: 100%;}
+.pro { margin-bottom:25px; padding-left:28px;}
+.text { padding: 17px 22px 22px; background:#efefef; overflow: hidden;}
+.right .bottom .text h4 { font-weight: normal; margin-bottom: 25px; font-size:12px; margin-left:0;}
+.text span { color: #ff0000; float: left; line-height:30px;}
+.text p { float: right;}
+.text p a { padding:9px 23px; border: 0; background:#f00; border-radius: 0;color: #fff;}
+.text p a:hover { background:#f00; color:#f0f0f0;}
+
+
+@media screen and (max-width: 1024px){
+  .left .bottom { padding-bottom:164px;}
+  .pro {
+    padding-left: 22px; }
+  .list a { line-height:20px;}
+  .list .pro:nth-child(1) { padding-left:25px;}
+  .text { padding:14px 18px 15px;}
+  .text p a { padding:7px 16px;}
+  .left .active { background-position: 10%;}
+  .left li:hover { background-position: 10%;}
+  .right .bottom .text h4 { margin-bottom:12px;}
+
+  }
+
+  @media screen and (max-width: 767px){
+  .photo img{ width: auto;}
+  .right { padding-top:0;}
+  .right .photo { text-align: center; margin-bottom:35px;}
+  .right .top { padding:34px 25px;}
+  .right .top .detail li{ line-height:36px; color:#777; font-size:18px;}
+  .right .top .safe { margin:10px 0;}
+  .right .top .detail:nth-child(3) { padding-left:10%;}
+  .center { background:#efefef; padding:26px 15px 0; margin:0 -15px;}
+  .center .icon { text-align:center; font-size:18px; margin-bottom:30px;}
+  .icon a { display: block;}
+  .center .icon p { line-height:35px;}
+  .bottom { margin-top:42px;}
+  .bottom h3 { border-left:7px solid #000; border-bottom:1px solid #000; padding-left:5px; font-size:24px; margin-bottom:18px; line-height:32px;}
+  .list a { font-size:18px;}
+  .list span { font-size:18px;}
+  .text p a { padding:5px 10px;}
+  .right .bottom h3{ margin-left:0;}
+  .list .pro:nth-child(1) { padding-left:11px;}
+  .pro { padding:0 11px;}
+}
+
+@media screen and (max-width: 585px){
+  .right .detail { margin-top:20px; padding-left:0; }
+  .right .top .detail li{ font-size:14px;}
+  .list a { font-size:14px;}
+  .center .icon { font-size:16px;}
+  .bottom h3 { font-size:22px;}
+}
+
+@media screen and (max-width: 490px){
+.text { padding:12px 14px 15px;}
+.center .icon { font-size:14px;}
+.bottom h3 { font-size:20px;}
+}
+
+
+@media screen and (max-width: 435px){
+
+  .text { padding: 7px;}
+  .right .safe { width:auto;}
+  .text p { float: left;}
+  .bottom h3 { font-size:18px;}
+  .right .detail { padding-left:24%; margin-top:0;  width: 100%;}
+  .right .top .detail:nth-child(3) { padding:0 0 0 24%;}
+  .right .top .detail li { font-size:14px;}
+  .list span { font-size:16px;}
+  .list a { font-size:14px;}
+
+
+}
+
+@media screen and (max-width: 350px){
+  .right .detail { padding-left:20%; margin-top:0;}
+  .right .top .detail:nth-child(3) { padding:0 0 0 20%;}
+  .bottom h3 { font-size:16px;}
+  .right .top .detail li { font-size:12px;}
+  .list span { font-size:14px;}
+  .list a { font-size:12px;}
+
+}

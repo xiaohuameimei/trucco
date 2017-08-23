@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>注册页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css" >
+    <link rel="stylesheet" href="css/reg.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/reg.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="visible-xs title">
+            <h3>注册</h3>
+            <button onclick="returnBack()"><img src="images/about_1_xs.png"></button>
+        </div>
+        <div class="container hidden-xs">
+            <div class="top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <a href="index.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-5">
+                        <form class="input-group search">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">    <img src="images/search.png" ></button>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="col-md-6 col-sm-6 login">
+                            <a href="login.html" id="login">登录</a>
+                            <a href="reg.html" id="reg">注册</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 shop_cart">
+                            <a href="shop_cart.html">我的购物车
+                            <img src="images/shop_cart.png">
+                            <span>(0)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default  hidden-xs">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="about.html">品牌介绍</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                            <li><a href="product.html">产品中心</a></li>
+                            <li><a href="contact_us.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="middle">
+        <div class="reg">
+            <h3>会员注册</h3>
+            <p class="text-right">已有账号？<span>在此</span><a href="login.html">登录</a></p>
+            <div class="row">
+            <form class="form-horizontal">
+                <div  class="form-group">
+                    <label for="name" class="col-md-3 col-sm-3 col-xs-3 heading control-label"><i>*</i>用户名：</label>
+                    <div class=" col-md-9 col-sm-9 col-xs-9 inputBox">
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password1" class="col-md-3 col-sm-3 col-xs-3 heading control-label"><i>*</i>设置密码：</label>
+                    <div class="col-md-9 col-sm-9 col-xs-9 inputBox">
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password2" class="col-md-3 col-sm-3 col-xs-3  heading control-label"><i>*</i>确认密码：</label>
+                    <div class="col-md-9 col-sm-9 col-xs-9 inputBox">
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-md-3 col-sm-3 col-xs-3 heading control-label"><i>*</i>E-mail：</label>
+                    <div class="col-md-9 col-sm-9 col-xs-9 inputBox">
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+                <div  class="form-group">
+                    <label for="phone" class="col-md-3 col-sm-3 col-xs-3 heading control-label"><i>*</i>手机号码：</label>
+                    <div class="col-md-9 col-sm-9 col-xs-9 inputBox">
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                </div>
+                <div  class="form-group num">
+                    <label class="col-md-3 col-sm-3 col-xs-3 control-label heading"><i>*</i>验证码：</label>
+                    <div class="col-md-9 col-sm-9 col-xs-9 input-group inputBox">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">获取验证码</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-4 col-sm-2 col-xs-2">
+                    </div>
+                    <div class="agree col-md-8 col-sm-10  col-xs-10">
+                        <div class="aggress">
+                            <div class="check">
+                            <img src="images/kuang.png">
+                            </div><p>同意并已阅读《<a>TRUCCO用户注册协议</a>》</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3  col-sm-2 col-xs-0">
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <button id="reg">注册</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>版权所有 trucco有限责任公司 中国丽人网　提供技术支持 ◎ 服装品牌大全 ◎知名品牌招商</p>
+        <p>《中华人民共和国增值电信业务经营许可证》浙B2-20110190</p>
+    </div>
+
+</body>
+</html>

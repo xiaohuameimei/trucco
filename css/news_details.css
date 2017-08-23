@@ -1,0 +1,53 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-14 09:27:29
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-12 16:55:54
+*/
+.middle .position { margin:20px 0 0 34px;}
+.middle .title h3 { text-align: center; line-height: 110px; background:url(../images/about_title.png)no-repeat 50% 40%; font-size:18px; font-weight: normal;}
+
+.content_title { text-align: center; border-bottom:1px dashed #000; margin-bottom:20px; padding-bottom:13px;}
+.content_title h3 { font-size: 18px; color:#000; font-weight: normal; margin-bottom:20px;}
+.content_title span { font-size:12px;}
+.text { overflow:hidden;}
+.text p{ text-indent: 2em; font-size:12px; color:#000; line-height:22px; margin-bottom: 20px;}
+.text .pic { margin: 10px 0 30px;}
+.text .pic img { display: block; width:100%; padding:0 2%;}
+
+.pager { text-align:left; overflow: hidden; margin:20px 0 60px;}
+.pager li:nth-child(2) { float: right;}
+.pager li a { border:0; border-radius:0; padding: 0 15px;}
+.pager li a:hover { color:#f00;}
+
+
+  @media screen and (max-width: 767px){
+  .content_title { margin-top: 33px; padding-bottom: 13px;}
+  .content_title h3 { font-size:24px; margin-bottom:15px;}
+  .content_title span { font-size:18px;}
+  .text p { font-size:18px; line-height:30px;}
+  .page ul li a{ padding:15px 0; font-size:18px;}
+  .page ul li:hover a { color:#f00;}
+  }
+
+  @media screen and (max-width: 650px){
+    .content_title h3 { font-size:22px;}
+    .content_title span { font-size:16px;}
+    .text p { font-size:16px;}
+    .page ul li a { font-size:16px;}
+  }
+
+  @media screen and (max-width: 550px){
+    .content_title h3 { font-size:20px;}
+    .content_title span { font-size:14px;}
+    .text p { font-size:14px;}
+    .page ul li a { font-size:14px;}
+
+  }
+
+  @media screen and (max-width: 450px){
+    .content_title h3 { font-size:18px;}
+    .content_title span { font-size:12px;}
+    .text p { font-size:12px;}
+
+  }

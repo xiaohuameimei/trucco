@@ -1,0 +1,125 @@
+/*
+* @Author: Marte
+* @Date:   2017-06-15 17:20:52
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-13 10:42:43
+*/
+.middle .position { margin:20px 0 0 34px;}
+.middle .top { overflow:hidden; }
+.middle .top h2 { background: #000; color: #fff; width:98px; text-align: center; font-weight: normal;padding: 9px 0; font-size: 18px; margin-bottom: 17px;}
+.middle .top .schedule { margin-top:26px;}
+.middle .top .schedule img { width:auto; margin:0 auto; display: block;}
+.middle .top .schedule_text { width:684px; text-align:center; margin:10px auto  3px;}
+.middle .top img { width:6.2%; margin-right:13px;}
+.middle .top .text h3 { font-size:18px; font-weight:normal; line-height:22px;}
+.middle .top .text p { font-size:14px; line-height:28px;}
+.middle .top .text .text_left{ float: left; margin-right: 57px}
+
+
+.middle .center { margin-top: 40px;}
+.middle .center h2{ font-size:18px; line-height:35px; font-weight:normal;}
+.middle .center h3 { font-size:18px; line-height:35px; font-weight:normal;}
+.middle .radio_pay .payment { display: inline-block; width:12%;}
+.middle .radio_pay img { width:80%;}
+.middle .bottom { margin-bottom:85px;}
+.middle .bottom h2 { font-size:18px; line-height:50px; font-weight:normal;}
+.middle .container .bottom p { font-size:14px; line-height:30px;}
+.middle .container .bottom p:nth-child(2){ line-height:35px;}
+.middle .container .bottom p span { color:#f00;}
+.middle .container .bottom p:nth-child(3){ line-height:35px;}
+.middle .bottom button { border-radius: 0; background: #f00; color: #fff; width:157px; font-size:18px; margin-top:5px;}
+.middle .bottom input { width:29px; height: 29px; text-align:center; margin-left:-1px;}
+.middle .bottom a { font-size:14px; margin-left:10px;}
+.modal-dialog { width:63.4%; margin:10% auto;}
+.modal-content { border-radius:10px;}
+.modal-body { overflow:hidden; background-color: #e2e2e2; padding:70px 85px; border-radius:10px;}
+.modal-body img { width:82%;}
+#myModal .modal-body h3 { color:#31bd00; font-size:48px; font-weight:normal; line-height:70px; margin-bottom:15px;}
+#myModal1 .modal-body h3 { color:#f00; font-size:48px; font-weight:normal; line-height:70px; margin-bottom:15px;}
+.modal-body p { line-height:36px; font-size:14px; margin-left:25px;}
+#myModal a { background:#31bd00 !important; border: 0; border-radius:0; color:#fff; padding:8px 18px; font-size:18px; margin-right:16%; margin-top:10px;}
+#myModal1 a { background:#f00 !important; border: 0; border-radius:0; color:#fff; padding:8px 18px; font-size:18px; margin-right:16%; margin-top:10px;}
+.modal_text { padding-left:2%;}
+.radio_pay { cursor: pointer;}
+.close { position:absolute; top:20px; right: 40px;}
+.close span { font-size:40px;}
+
+@media screen and (max-width: 1024px){
+  .middle .position {
+    margin: 20px 0; }
+  .middle .top img {
+    width: 10%; }
+  .modal-dialog { width:77%; }
+  .modal-body { padding:58px 40px;}
+  .modal-body img { width:80%;}
+  .modal_text { padding-left:0;}
+}
+
+  @media screen and (max-width: 767px){
+  .middle .top { margin-top:32px;}
+  .middle .top h2 {  font-size: 24px; width:119px; line-height:44px;}
+  .middle .top img { width: 11.5%; }
+  .middle .top .text h3 { font-size:24px;}
+  .middle .top .text p { font-size:18px;}
+  .middle .center { margin-top: 30px; }
+  .middle .center h2 { font-size:24px; line-height:45px;}
+  .middle .center h3 { font-size:24px;}
+  .middle .center h3:nth-child(4) { margin-top:30px; line-height:42px;}
+  .middle .radio_pay {margin-bottom:19px;}
+  .middle .bottom h2 { font-size:24px;}
+  .middle .bottom p { font-size:18px;}
+  .modal-dialog { width:95%; }
+  .modal-body { padding:40px 13px;}
+  .modal-body p { line-height:30px; font-size:18px;}
+  .details-btn { padding:10px 34px; margin-right:15%;}
+  .middle .container .bottom p { font-size:18px;}
+  .middle .bottom a { font-size:18px;}
+  .middle .bottom button { font-size:24px; padding:1.8% 8.3%; width:auto;}
+}
+
+  @media screen and (max-width: 650px){
+   .middle .top img { margin:0;}
+   .middle .top .text { padding-left:12px;}
+  }
+
+  @media screen and (max-width: 588px){
+  .middle .top .text .text_left { float: none; margin-right:0;}
+  }
+
+  @media screen and (max-width: 550px){
+  .middle .top h2 {font-size:22px; line-height:35px;}
+  .middle .top .text h3 { font-size:22px;}
+  .middle .top .text p ,.middle .container .bottom p ,.middle .bottom a{ font-size:16px;}
+  .middle .top img { width:15%;}
+    .middle .top .text { width:85%;}
+    .middle .center h2 , .middle .center h3 , .middle .bottom h2 , .middle .bottom button{font-size:22px;}
+    .middle .center h3:nth-child(4) { margin-top:15px;}
+  #myModal .modal-body h3 , #myModal1 .modal-body h3 {font-size:36px;line-height:40px;}
+   .modal-body p { font-size:15px; margin-left:15px;}
+   #myModal a , #myModal1 a { font-size:15px; margin-right:17%;}
+   .close span { font-size:30px;}
+   .close { top:10px; right: 24px;}
+  }
+  @media screen and (max-width: 450px){
+  .middle .top h2 {font-size:20px; line-height:30px;}
+  .middle .top .text h3 { font-size:20px;}
+  .middle .top .text p ,.middle .container .bottom p ,.middle .bottom a{ font-size:14px;}
+   .middle .center h2 , .middle .center h3 , .middle .bottom button{font-size:20px;}
+   .middle .center h3:nth-child(4) { margin-top:10px;}
+
+   #myModal .modal-body h3 , #myModal1 .modal-body h3 {font-size:24px;line-height:36px;}
+   .modal-body p { font-size:12px; margin-left:0;}
+   #myModal a , #myModal1 a { font-size:12px; margin-right:8%;}
+   .close span { font-size:30px;}
+   .close { top:10px; right: 24px;}
+  }
+
+  @media screen and (max-width: 400px){
+    .middle .top h2 {font-size:18px; line-height:25px;}
+    .middle .top img { width:22%;}
+    .middle .top .text { width:78%;}
+  .middle .top .text h3 { font-size:18px;}
+  .middle .top .text p ,.middle .container .bottom p ,.middle .bottom a{ font-size:12px;}
+   .middle .center h2 , .middle .center h3 , .middle .bottom h2 , .middle .bottom button{font-size:18px;}
+   .middle .center h3:nth-child(4) { margin-top:5px;}
+  }

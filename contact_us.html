@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>联系我们</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/contact_us.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/verificationCode.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="visible-xs title">
+            <h3>联系我们</h3>
+            <button onclick="returnBack()"><img src="images/about_1_xs.png"></button>
+        </div>
+        <div class="container hidden-xs">
+            <div class="top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <a href="index.html"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="col-md-6 col-sm-5">
+                        <form class="input-group search">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">    <img src="images/search.png" ></button>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="col-md-6 col-sm-6 login">
+                            <a href="login.html"p>登录</a>
+                            <a href="reg.html"p>注册</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 shop_cart">
+                            <a href="shop_cart.html">我的购物车
+                            <img src="images/shop_cart.png">
+                            <span>(0)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default  hidden-xs">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="about.html">品牌介绍</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                            <li><a href="product.html">产品中心</a></li>
+                            <li class="active"><a href="contact_us.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="middle">
+        <div class="container">
+            <div class="position hidden-xs">
+                <p>您的当前位置：<a href="index.html">首页</a>><a href="#">联系我们</a></p>
+            </div>
+            <div class="title hidden-xs">
+                <h3>联系我们</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 map">
+                    <iframe src="map.html" scrolling="no"></iframe>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-12 left">
+                    <form>
+                        <div class="form-group">
+                            <label class="sr-only" for="name"></label>
+                            <input type="text" class="form-control" id="name" placeholder="姓名">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="phone"></label>
+                            <input type="text" class="form-control" id="phone" placeholder="电话">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="qq"></label>
+                            <input type="text" class="form-control" id="qq" placeholder="QQ">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="message"></label>
+                            <textarea class="form-control" id="message" placeholder="留言"></textarea>
+                        </div>
+                        <div class="form-group num ">
+                            <label class="sr-only" for="num"></label>
+                            <input type="text" class="form-control col-xs-4" id="num" placeholder="验证码">
+                            <div id="aa" class="col-xs-4"></div>
+                            <button type="button" onClick="update()">看不清，换一张</button>
+                        </div>
+                        <input type="submit" class="submit">
+                        <input type="reset" class="reset">
+                    </form>
+
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12 right">
+                    <img src="images/contact.png" class="col-md-5 col-sm-5 col-xs-5">
+                    <div class="text col-md-7 col-sm-7 col-xs-7">
+                        <h3>TRUCCO浙江义乌有限公司</h3>
+                        <p>邮箱：1425556788@qq.com</p>
+                        <p>传真：0459-12566346</p>
+                        <p>QQ：1425556788</p>
+                        <p>联系人：李某某</p>
+                        <p>联系电话：0459-31566648</p>
+                        <p>地址：浙江省义乌市江滨中路38-2号街姜凯大厦10楼1202室</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>版权所有 trucco有限责任公司 中国丽人网　提供技术支持 ◎ 服装品牌大全 ◎知名品牌招商</p>
+        <p>《中华人民共和国增值电信业务经营许可证》浙B2-20110190</p>
+    </div>
+<script type="text/javascript" src="js/contact_us.js"></script>
+</body>
+</html>
